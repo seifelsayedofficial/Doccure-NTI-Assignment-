@@ -1,1025 +1,2920 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
-    
-    <link rel="stylesheet" href="./style.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Doccure - Find and book appointments with trusted doctors, hospitals, and clinics near you."
+    />
+    <title>Doccure | Find Your Trusted Doctors Today</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap ICONS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <!-- Fontawesome ICONS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-white sticky-top border-bottom">
+      <div class="container d-flex justify-content-between align-items-center">
+        <a class="navbar-brand" href="#">
+          <img src="assets/logo.svg" height="32" />
+        </a>
 
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#mainMenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-  
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav mx-auto gap-4">
+            <li class="nav-item dropdown position-static">
+              <!-- Home -->
+              <a
+                class="nav-link dropdown-toggle active"
+                href="#"
+                data-bs-toggle="dropdown"
+              >
+                Home <i class="fa-solid fa-angle-down"></i>
+              </a>
 
-
-
-    <div class="hero-section position-relative">
-
-        <div class="hero-content container h-100 ">
-            <div class="row row-cols-12 h-100 align-items-center">
-                <div class="col-7 ">
-                    <div class="reviews bg-white ps-2 pe-4 py-2 rounded-pill d-flex align-items-center gap-3">
-                        <div class="doctors-imgs">
-                          <span> <img src="./images/heroSection/imgi_22_doctor-thumb-22.jpg" class="" alt=""></span> 
-                          <span> <img src="./images/heroSection/imgi_23_doctor-thumb-23.jpg" class="" alt=""></span> 
-                          <span> <img src="./images/heroSection/imgi_24_doctor-thumb-24.jpg" class="" alt=""></span> 
-                        </div>
-                        <div class="ms-3">
-                            <p class="fw-semibold mb-0 mb-1">5K+ Appointments</p>
-                            <ul class="d-flex ps-0 gap-1 mb-0 text-warning">
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <span class="ms-1 text-darkgray fw-semibold">5.0 Ratings</span>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div>
-                      <h1 class="hero-main-text fs-56px text-white fw-bold mt-4 mb-5">Discover Health: Find Your 
-                        
-                        Trusted <span class="banner3 rounded-pill align-middle d-inline-block position-relative"><img  src="./images/heroSection/imgi_25_video.svg" class="videoBanner w-50 position-absolute " alt=""></span> Doctors Today</h2>
-                    </div>
-                      <div class="hero-search mt-4">
-                        <div class="search-container bg-white rounded-pill px-3 py-2 d-flex align-items-center gap-3">
-
-
-                          <div class="d-flex align-items-center border-end pe-3">
-                            <i class="fa-solid fa-layer-group text-primary me-2"></i>
-                            <select class="hero-select">
-                              <option selected>Select speciality</option>
-                              <option>Cardiology</option>
-                              <option>Neurology</option>
-                              <option>Dermatology</option>
-                            </select>
-                          </div>
-
-
-                          <div class="d-flex align-items-center flex-grow-1 ">
-                            <i class="fa-solid fa-magnifying-glass text-muted me-2"></i>
-                            <input
-                              type="text"
-                              class="hero-input w-100" 
-                              placeholder="Search for medical procedures, hospitals "
-                            >
-                          </div>
-
-
-                          <button class="primary-btn fw-semibold px-4">
-                            Search
-                          </button>
-
-                        </div>
+              <div class="dropdown-menu w-100 border-0 shadow mega-menu">
+                <div class="mx-auto px-4 max-width-1600">
+                  <div
+                    class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 g-5"
+                  >
+                    <div class="col">
+                      <div class="home-card">
+                        <img src="assets/img/home/home.jpg" />
+                        <a class="home-card-title">General Home 1</a>
                       </div>
+                    </div>
 
-                </div>
+                    <div class="col">
+                      <div class="home-card">
+                        <img src="assets/img/home/home-01.jpg" />
+                        <a class="home-card-title">General Home 2</a>
+                      </div>
+                    </div>
 
-                <div class="col-5 position-relative">
-                  <img src="./images/heroSection/imgi_26_banner-doctor.svg" class="" alt="">
-                  <div class="position-absolute call-group-wave rounded-pill d-flex align-items-center justify-content-center">
-                    <div class=" call-group d-flex align-items-center justify-content-between gap-3 px-4 rounded-pill">
-                      <a href=""><i class="text-dark fa-solid fa-video fs-5"></i></a>
-                      <a href=""><i class="fa-solid fa-phone-slash fs-4 phone-icon text-white  d-flex align-items-center justify-content-center rounded-circle"></i></a>
-                      <a href=""><i class="fa-solid fa-microphone fs-4 text-dark"></i></a>
+                    <div class="col">
+                      <div class="home-card">
+                        <img src="assets/img/home/home-02.jpg" />
+                        <a class="home-card-title">Dental</a>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="home-card">
+                        <img src="assets/img/home/home-03.jpg" />
+                        <a class="home-card-title">Pediatrics</a>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="home-card">
+                        <img src="assets/img/home/home-04.jpg" />
+                        <a class="home-card-title">ENT</a>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="home-card">
+                        <img src="assets/img/home/home-05.jpg" />
+                        <a class="home-card-title">Veterinary</a>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="home-card">
+                        <img src="assets/img/home/home-06.jpg" />
+                        <a class="home-card-title">Cardiology</a>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="home-card">
+                        <img src="assets/img/home/home-07.jpg" />
+                        <a class="home-card-title">Eye Care</a>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="home-card">
+                        <img src="assets/img/home/home-08.jpg" />
+                        <a class="home-card-title">Home Care</a>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="home-card">
+                        <img src="assets/img/home/home-09.jpg" />
+                        <a class="home-card-title">Fertility</a>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="home-card">
+                        <img src="assets/img/home/home-10.jpg" />
+                        <a class="home-card-title">Cosmetic Surgery</a>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="home-card">
+                        <img src="assets/img/home/home-11.jpg" />
+                        <a class="home-card-title">Laboratory</a>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="home-card">
+                        <img src="assets/img/home/home-12.jpg" />
+                        <a class="home-card-title">Pharmacy</a>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="home-card">
+                        <img src="assets/img/home/coming-soon.jpg" />
+                        <a class="home-card-title">Coming Soon</a>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="home-card">
+                        <img src="assets/img/home/coming-soon.jpg" />
+                        <a class="home-card-title">Coming Soon</a>
+                      </div>
                     </div>
                   </div>
-
                 </div>
+              </div>
+            </li>
+            <!-- Doctors -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+              >
+                Doctors <i class="fa-solid fa-angle-down"></i>
+              </a>
+
+              <div
+                class="dropdown-menu border-0 shadow p-4 dropdown-center doctor-menu"
+              >
+                <div class="row g-4 align-items-center min-width-600">
+                  <div class="col-6">
+                    <ul class="list-unstyled mb-0">
+                      <li class="mb-2">
+                        <a
+                          class="nav-link p-0 doctor-link"
+                          href="dashboard.html"
+                          >Doctor Dashboard</a
+                        >
+                      </li>
+                      <li class="mb-2">
+                        <a class="nav-link p-0 doctor-link" href="#"
+                          >Appointments</a
+                        >
+                      </li>
+                      <li class="mb-2">
+                        <a class="nav-link p-0 doctor-link" href="#"
+                          >Available Timing</a
+                        >
+                      </li>
+                      <li class="mb-2">
+                        <a class="nav-link p-0 doctor-link" href="#"
+                          >Patients List</a
+                        >
+                      </li>
+                      <li class="mb-2">
+                        <a class="nav-link p-0 doctor-link" href="#">Chat</a>
+                      </li>
+                      <li class="mb-2">
+                        <a class="nav-link p-0 doctor-link" href="#"
+                          >Invoices</a
+                        >
+                      </li>
+                      <li>
+                        <a class="nav-link p-0 doctor-link" href="#"
+                          >Profile Settings</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="col-6">
+                    <img
+                      src="assets/img/home/menu-img-1.jpg"
+                      class="img-thumbnail rounded-4"
+                    />
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- Patients -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+              >
+                Patients <i class="fa-solid fa-angle-down"></i>
+              </a>
+
+              <div
+                class="dropdown-menu border-0 shadow p-4 dropdown-center doctor-menu"
+              >
+                <div class="row g-4 align-items-center min-width-850">
+                  <div class="col-4 menu-divider">
+                    <ul class="list-unstyled mb-0">
+                      <li class="mb-2">
+                        <a class="nav-link p-0 doctor-link" href="#"
+                          >Patient Dashboard</a
+                        >
+                      </li>
+                      <li class="mb-2">
+                        <a class="nav-link p-0 doctor-link" href="#"
+                          >Doctors Grid</a
+                        >
+                      </li>
+                      <li class="mb-2">
+                        <a class="nav-link p-0 doctor-link" href="#"
+                          >Doctors List</a
+                        >
+                      </li>
+                      <li class="mb-2">
+                        <a class="nav-link p-0 doctor-link" href="#"
+                          >Doctors Availability</a
+                        >
+                      </li>
+                      <li class="mb-2">
+                        <a class="nav-link p-0 doctor-link" href="#">Booking</a>
+                      </li>
+                      <li class="mb-2">
+                        <a class="nav-link p-0 doctor-link" href="#"
+                          >Booking 1</a
+                        >
+                      </li>
+                      <li class="mb-2">
+                        <a class="nav-link p-0 doctor-link" href="#"
+                          >Booking 2</a
+                        >
+                      </li>
+                      <li class="mb-2">
+                        <a class="nav-link p-0 doctor-link" href="#"
+                          >Booking Popup</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="col-4">
+                    <ul class="list-unstyled mb-3 ps-3">
+                      <li class="mb-2">
+                        <a class="nav-link p-0 doctor-link" href="#"
+                          >Search Doctor 1</a
+                        >
+                      </li>
+                      <li class="mb-2">
+                        <a class="nav-link p-0 doctor-link" href="#"
+                          >Search Doctor 2</a
+                        >
+                      </li>
+                      <li class="mb-2">
+                        <a class="nav-link p-0 doctor-link" href="#"
+                          >Doctor Profile 1</a
+                        >
+                      </li>
+                      <li class="mb-2">
+                        <a class="nav-link p-0 doctor-link" href="#"
+                          >Doctor Profile 2</a
+                        >
+                      </li>
+                      <li class="mb-2">
+                        <a class="nav-link p-0 doctor-link" href="#"
+                          >Checkout</a
+                        >
+                      </li>
+                      <li class="mb-2">
+                        <a class="nav-link p-0 doctor-link" href="#"
+                          >Favourites</a
+                        >
+                      </li>
+                      <li class="mb-2">
+                        <a class="nav-link p-0 doctor-link" href="#">Chat</a>
+                      </li>
+                      <li class="mb-2">
+                        <a class="nav-link p-0 doctor-link" href="#"
+                          >Profile Settings</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="col">
+                    <img
+                      src="assets/img/home/menu-img-2.jpg"
+                      class="img-thumbnail rounded-4 max-width-250"
+                      alt="Patients Menu"
+                    />
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- Pharmacy -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+              >
+                Pharmacy <i class="fa-solid fa-angle-down"></i>
+              </a>
+
+              <div
+                class="dropdown-menu border-0 shadow p-4 dropdown-center1 doctor-menu"
+              >
+                <div class="row g-4 align-items-center min-width-600">
+                  <div class="col-6">
+                    <ul class="list-unstyled mb-0">
+                      <li class="mb-2">
+                        <a
+                          class="nav-link p-0 doctor-link"
+                          href="dashboard.html"
+                          >Pharmacy
+                        </a>
+                      </li>
+                      <li class="mb-2">
+                        <a class="nav-link p-0 doctor-link" href="#"
+                          >Pharmacy Details</a
+                        >
+                      </li>
+                      <li class="mb-2">
+                        <a class="nav-link p-0 doctor-link" href="#"
+                          >Pharmacy Search</a
+                        >
+                      </li>
+                      <li class="mb-2">
+                        <a class="nav-link p-0 doctor-link" href="#">Product</a>
+                      </li>
+                      <li class="mb-2">
+                        <a class="nav-link p-0 doctor-link" href="#"
+                          >Product Description</a
+                        >
+                      </li>
+                      <li class="mb-2">
+                        <a class="nav-link p-0 doctor-link" href="#">Cart</a>
+                      </li>
+                      <li class="mb-2">
+                        <a class="nav-link p-0 doctor-link" href="#"
+                          >Product Checkout</a
+                        >
+                      </li>
+                      <li class="mb-2">
+                        <a class="nav-link p-0 doctor-link" href="#"
+                          >Payment Success</a
+                        >
+                      </li>
+                      <li class="mb-2">
+                        <a class="nav-link p-0 doctor-link" href="#"
+                          >Pharmacy Register</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="col-6">
+                    <img
+                      src="assets/img/home/menu-img-3.jpg"
+                      class="img-thumbnail rounded-4"
+                    />
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- Pages -->
+            <li class="nav-item dropdown position-static">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+              >
+                Pages <i class="fa-solid fa-angle-down"></i>
+              </a>
+
+              <div class="dropdown-menu w-100 border-0 shadow pages-menu">
+                <div class="mx-auto px-4 max-width-1600 py-4">
+                  <div class="row g-4">
+                    <div class="col-lg-3 menu-divider ps-4">
+                      <ul class="list-unstyled mb-0">
+                        <li class="mb-2">
+                          <a class="nav-link p-0" href="#">About Us</a>
+                        </li>
+                        <li class="mb-2">
+                          <a class="nav-link p-0" href="#">Contact Us</a>
+                        </li>
+                        <li class="mb-2">
+                          <a class="nav-link p-0" href="#">Hospitals</a>
+                        </li>
+                        <li class="mb-2">
+                          <a class="nav-link p-0" href="#">Speciality</a>
+                        </li>
+                        <li class="mb-2">
+                          <a class="nav-link p-0" href="#">Clinic</a>
+                        </li>
+                        <li class="mb-2">
+                          <a class="nav-link p-0" href="#">Starter Page</a>
+                        </li>
+                        <li class="mb-2">
+                          <a class="nav-link p-0" href="#">Pricing Plan</a>
+                        </li>
+                        <li class="mb-2">
+                          <a class="nav-link p-0" href="#">FAQ</a>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="col-lg-3 menu-divider ps-4">
+                      <ul class="list-unstyled mb-0">
+                        <li class="mb-2">
+                          <a class="nav-link p-0" href="#">Login Email</a>
+                        </li>
+                        <li class="mb-2">
+                          <a class="nav-link p-0" href="#">Login Phone</a>
+                        </li>
+                        <li class="mb-2">
+                          <a class="nav-link p-0" href="#">Doctor Signup</a>
+                        </li>
+                        <li class="mb-2">
+                          <a class="nav-link p-0" href="#">Patient Signup</a>
+                        </li>
+                        <li class="mb-2">
+                          <a class="nav-link p-0" href="#">Forgot Password 1</a>
+                        </li>
+                        <li class="mb-2">
+                          <a class="nav-link p-0" href="#">Forgot Password 2</a>
+                        </li>
+                        <li class="mb-2">
+                          <a class="nav-link p-0" href="#">Email OTP</a>
+                        </li>
+                        <li class="mb-2">
+                          <a class="nav-link p-0" href="#">Phone OTP</a>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="col-lg-3 menu-divider ps-4">
+                      <ul class="list-unstyled mb-0">
+                        <li class="mb-2">
+                          <a class="nav-link p-0" href="#">Maintenance</a>
+                        </li>
+                        <li class="mb-2">
+                          <a class="nav-link p-0" href="#">Coming Soon</a>
+                        </li>
+                        <li class="mb-2">
+                          <a class="nav-link p-0" href="#">Terms & Condition</a>
+                        </li>
+                        <li class="mb-2">
+                          <a class="nav-link p-0" href="#">Privacy Policy</a>
+                        </li>
+                        <li class="mb-2">
+                          <a class="nav-link p-0" href="#">Components</a>
+                        </li>
+                        <li class="mb-2">
+                          <a class="nav-link p-0" href="#">Invoices</a>
+                        </li>
+                        <li class="mb-2">
+                          <a class="nav-link p-0" href="#">Invoice View</a>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="col-lg-3 ps-4">
+                      <ul class="list-unstyled mb-0">
+                        <li class="mb-2">
+                          <a class="nav-link p-0" href="#">Voice Call</a>
+                        </li>
+                        <li class="mb-2">
+                          <a class="nav-link p-0" href="#">Video Call</a>
+                        </li>
+                        <li class="mb-2">
+                          <a class="nav-link p-0" href="#">404 Error</a>
+                        </li>
+                        <li><a class="nav-link p-0" href="#">500 Error</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- Blog -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+              >
+                Blog <i class="fa-solid fa-angle-down"></i>
+              </a>
+
+              <div
+                class="dropdown-menu border-0 shadow p-3 dropdown-center2 dropdown-center"
+              >
+                <ul class="list-unstyled mb-0" style="min-width: 220px">
+                  <li class="mb-2">
+                    <a class="nav-link p-0 doctor-link" href="#">Blog List</a>
+                  </li>
+                  <li class="mb-2">
+                    <a class="nav-link p-0 doctor-link" href="#">Blog Grid</a>
+                  </li>
+                  <li class="mb-2">
+                    <a class="nav-link p-0 doctor-link" href="#"
+                      >Blog Details</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <!-- Admin -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+              >
+                Admin <i class="fa-solid fa-angle-down"></i>
+              </a>
+
+              <div class="dropdown-menu border-0 shadow p-3 dropdown-center2">
+                <ul class="list-unstyled mb-0" style="min-width: 220px">
+                  <li class="mb-2">
+                    <a class="nav-link p-0 doctor-link" href="#">Admin</a>
+                  </li>
+                  <li class="mb-2">
+                    <a class="nav-link p-0 doctor-link" href="#"
+                      >Pharmacy Admin</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="d-none d-lg-flex align-items-center gap-2 ms-3">
+          <a
+            href="#"
+            class="btn btn-primary-gradient border-0 text-white rounded-4 px-4 py-2"
+          >
+            <i class="bi bi-lock"></i>
+            Sign In
+          </a>
+          <a
+            href="#"
+            class="btn btn-dark border-0 rounded-4 fw-medium px-4 py-2"
+          >
+            <i class="bi bi-person-check"></i>
+            Register
+          </a>
+          <a
+            href="#"
+            class="btn text-dark btn-circle d-inline-flex justify-content-center align-items-center p-0 rounded-circle"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#support_item"
+          >
+            <i class="fa-solid fa-shapes"></i>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <!-- Mobile Menu -->
+    <div class="offcanvas offcanvas-start" id="mainMenu">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title">Menu</h5>
+        <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav gap-3">
+          <li
+            class="nav-item d-flex align-items-center justify-content-between"
+          >
+            <a class="nav-link" href="#">Home</a
+            ><i
+              class="fa-solid fa-angle-right btn bord btn-circle d-flex justify-content-center align-items-center"
+            ></i>
+          </li>
+          <hr class="my-0 py-0" />
+          <li
+            class="nav-item d-flex align-items-center justify-content-between"
+          >
+            <a class="nav-link" href="#">Doctors</a
+            ><i
+              class="fa-solid fa-angle-right btn bord btn-circle d-flex justify-content-center align-items-center"
+            ></i>
+          </li>
+          <hr class="my-0 py-0" />
+          <li
+            class="nav-item d-flex align-items-center justify-content-between"
+          >
+            <a class="nav-link" href="#">Patients</a
+            ><i
+              class="fa-solid fa-angle-right btn bord btn-circle d-flex justify-content-center align-items-center"
+            ></i>
+          </li>
+          <hr class="my-0 py-0" />
+          <li
+            class="nav-item d-flex align-items-center justify-content-between"
+          >
+            <a class="nav-link" href="#">Pharmacy</a
+            ><i
+              class="fa-solid fa-angle-right btn bord btn-circle d-flex justify-content-center align-items-center"
+            ></i>
+          </li>
+          <hr class="my-0 py-0" />
+          <li
+            class="nav-item d-flex align-items-center justify-content-between"
+          >
+            <a class="nav-link" href="#">Pages</a
+            ><i
+              class="fa-solid fa-angle-right btn bord btn-circle d-flex justify-content-center align-items-center"
+            ></i>
+          </li>
+          <hr class="my-0 py-0" />
+          <li
+            class="nav-item d-flex align-items-center justify-content-between"
+          >
+            <a class="nav-link" href="#">Blog</a
+            ><i
+              class="fa-solid fa-angle-right btn bord btn-circle d-flex justify-content-center align-items-center"
+            ></i>
+          </li>
+          <hr class="my-0 py-0" />
+          <li
+            class="nav-item d-flex align-items-center justify-content-between"
+          >
+            <a class="nav-link" href="#">Admin</a
+            ><i
+              class="fa-solid fa-angle-right btn bord btn-circle d-flex justify-content-center align-items-center"
+            ></i>
+          </li>
+        </ul>
+        <hr class="mt-0 pt-0" />
+        <div>
+          <h2 class="information fs-5 fw-bold">Contact Information</h2>
+          <div class="d-flex align-items-center">
+            <i
+              class="fa-solid fa-location-dot fs-4 text-white bg-primary canvas-info-icons d-flex align-items-center justify-content-center rounded-circle"
+            ></i>
+            <div class="ms-1">
+              <h6 class="fw-bold fs-6 mb-1">General Inquiries</h6>
+              <p class="mb-0 text-muted">info@example.com</p>
             </div>
+          </div>
+          <div class="d-flex align-items-center">
+            <i
+              class="fa-solid fa-phone fs-4 text-white bg-primary canvas-info-icons d-flex align-items-center justify-content-center rounded-circle"
+            ></i>
+            <div class="ms-1">
+              <h6 class="fw-bold fs-6 mb-1">Phone Number</h6>
+              <p class="mb-0 text-muted">+1 315 369 5943</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h5 class="fw-bold mb-3">Follow Us</h5>
+
+          <div class="d-flex gap-2">
+            <a
+              href="#"
+              class="btn text-dark btn-circle d-inline-flex justify-content-center align-items-center p-0 rounded-circle"
+            >
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a
+              href="#"
+              class="btn text-dark btn-circle d-inline-flex justify-content-center align-items-center p-0 rounded-circle"
+            >
+              <i class="fab fa-x-twitter"></i>
+            </a>
+            <a
+              href="#"
+              class="btn text-dark btn-circle d-inline-flex justify-content-center align-items-center p-0 rounded-circle"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a
+              href="#"
+              class="btn text-dark btn-circle d-inline-flex justify-content-center align-items-center p-0 rounded-circle"
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+        <div class="d-block d-lg-flex align-items-center gap-2 ms-3">
+          <a
+            href="#"
+            class="d-block mb-2 btn btn-primary-gradient border-0 text-white rounded-4 px-4 py-2"
+          >
+            <i class="bi bi-lock"></i>
+            Login
+          </a>
+          <a
+            href="#"
+            class="d-block btn btn-dark border-0 rounded-4 fw-medium px-4 py-2"
+          >
+            <i class="bi bi-person-check"></i>
+            Register
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Support Canvas -->
+    <div
+      class="offcanvas offcanvas-end overflow-scroll"
+      tabindex="-1"
+      id="support_item"
+    >
+      <div class="offcanvas-header border-bottom">
+        <img src="assets/logo.svg" height="32" alt="logo" />
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+        ></button>
+      </div>
+
+      <div class="offcanvas-body p-4">
+        <!-- About -->
+        <div class="mb-5">
+          <h5 class="fw-bold fs-20 mb-3 about-canvas">About Doccure</h5>
+          <p class="text-muted fs-6">
+            Modern healthcare platform designed to simplify the way patients
+            connect with doctors, clinics & medical services.
+          </p>
+
+          <div class="row g-2 mt-3">
+            <div class="col-4">
+              <img
+                src="assets/img/banner/about-img-1.jpg"
+                class="img-fluid rounded-3"
+              />
+            </div>
+            <div class="col-4">
+              <img
+                src="assets/img/banner/about-img-2.jpg"
+                class="img-fluid rounded-3"
+              />
+            </div>
+            <div class="col-4">
+              <img
+                src="assets/img/banner/about-img-3.jpg"
+                class="img-fluid rounded-3"
+              />
+            </div>
+          </div>
+        </div>
+        <hr />
+
+        <!-- Locations -->
+        <div class="mb-5">
+          <h5 class="fw-bold fs-20 mb-3 locations">Our Locations</h5>
+
+          <div class="mb-3">
+            <h6 class="fw-semibold mb-1 fs-6">California</h6>
+            <p class="text-muted fs-6 mb-0 border-bottom w-fit">
+              1250 Sunset, Los Angeles, CA
+            </p>
+          </div>
+
+          <div>
+            <h6 class="fw-semibold mb-1 fs-6">Los Angeles</h6>
+            <p class="text-muted fs-6 mb-0 border-bottom w-fit">
+              669 Boulevard, Los Angeles
+            </p>
+          </div>
+        </div>
+        <hr />
+
+        <!-- Contact -->
+        <div class="mb-5">
+          <h5 class="fw-bold fs-20 mb-3 information">Contact Information</h5>
+
+          <div class="d-flex align-items-center gap-3 mb-3">
+            <div
+              class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center canvas-info-icons"
+            >
+              <i class="fa-solid fa-comments"></i>
+            </div>
+            <div>
+              <small class="text-muted d-block">General Inquiries</small>
+              <span class="fw-semibold">info@example.com</span>
+            </div>
+          </div>
+
+          <div class="d-flex align-items-center gap-3">
+            <div
+              class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center canvas-info-icons"
+            >
+              <i class="fa-solid fa-phone-volume"></i>
+            </div>
+            <div>
+              <small class="text-muted d-block">Emergency Cases</small>
+              <span class="fw-semibold">+1 24565 89856</span>
+            </div>
+          </div>
+        </div>
+        <hr />
+
+        <!-- Social -->
+        <div>
+          <h5 class="fw-bold mb-3">Follow Us</h5>
+
+          <div class="d-flex gap-2">
+            <a
+              href="#"
+              class="btn text-dark btn-circle d-inline-flex justify-content-center align-items-center p-0 rounded-circle"
+            >
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a
+              href="#"
+              class="btn text-dark btn-circle d-inline-flex justify-content-center align-items-center p-0 rounded-circle"
+            >
+              <i class="fab fa-x-twitter"></i>
+            </a>
+            <a
+              href="#"
+              class="btn text-dark btn-circle d-inline-flex justify-content-center align-items-center p-0 rounded-circle"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a
+              href="#"
+              class="btn text-dark btn-circle d-inline-flex justify-content-center align-items-center p-0 rounded-circle"
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <main>
+      <section class="hero-section position-relative">
+        <div class="hero-content container h-100">
+          <div class="row row-cols-12 h-100 align-items-center">
+            <div class="col-7">
+              <div
+                class="reviews bg-white ps-2 pe-4 py-2 rounded-pill d-flex align-items-center gap-3"
+              >
+                <div class="doctors-imgs">
+                  <span>
+                    <img
+                      src="assets/img/banner/imgi_22_doctor-thumb-22.jpg"
+                      class=""
+                      alt=""
+                  /></span>
+                  <span>
+                    <img
+                      src="assets/img/banner/imgi_23_doctor-thumb-23.jpg"
+                      class=""
+                      alt=""
+                  /></span>
+                  <span>
+                    <img
+                      src="assets/img/banner/imgi_24_doctor-thumb-24.jpg"
+                      class=""
+                      alt=""
+                  /></span>
+                </div>
+                <div class="ms-3">
+                  <p class="fw-semibold mb-0 mb-1">5K+ Appointments</p>
+                  <ul class="d-flex ps-0 gap-1 mb-0 text-warning">
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <span class="ms-1 text-darkgray fw-semibold"
+                      >5.0 Ratings</span
+                    >
+                  </ul>
+                </div>
+              </div>
+
+              <div>
+                <h1 class="hero-main-text fs-56px text-white fw-bold mt-4 mb-5">
+                  Discover Health: Find Your Trusted
+                  <span
+                    class="banner3 rounded-pill align-middle d-inline-block position-relative"
+                    ><img
+                      src="assets/img/banner/imgi_25_video.svg"
+                      class="videoBanner w-50 position-absolute"
+                      alt="Video Banner"
+                  /></span>
+                  Doctors Today
+                </h1>
+              </div>
+              <div class="hero-search mt-4">
+                <div
+                  class="search-container bg-white rounded-pill px-3 py-2 d-flex align-items-center gap-3"
+                >
+                  <div class="d-flex align-items-center border-end pe-3">
+                    <i class="fa-solid fa-layer-group text-primary me-2"></i>
+                    <select class="hero-select">
+                      <option selected>Select speciality</option>
+                      <option>Cardiology</option>
+                      <option>Neurology</option>
+                      <option>Dermatology</option>
+                    </select>
+                  </div>
+
+                  <div class="d-flex align-items-center flex-grow-1">
+                    <i class="fa-solid fa-magnifying-glass text-muted me-2"></i>
+                    <input
+                      type="text"
+                      class="hero-input w-100"
+                      placeholder="Search for medical procedures, hospitals "
+                    />
+                  </div>
+
+                  <button class="primary-btn fw-semibold px-4">Search</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-5 position-relative align-self-end">
+              <img src="assets/img/banner/banner-doctor.svg" class="" alt="" />
+              <div
+                class="position-absolute call-group-wave rounded-pill d-flex align-items-center justify-content-center"
+              >
+                <div
+                  class="call-group d-flex align-items-center justify-content-between gap-3 px-4 rounded-pill"
+                >
+                  <a href=""
+                    ><i class="text-dark fa-solid fa-video fs-5"></i
+                  ></a>
+                  <a href=""
+                    ><i
+                      class="fa-solid fa-phone-slash fs-4 phone-icon text-white d-flex align-items-center justify-content-center rounded-circle"
+                    ></i
+                  ></a>
+                  <a href=""
+                    ><i class="fa-solid fa-microphone fs-4 text-dark"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="banners-bg">
-            <img src="./images/heroSection/imgi_27_banner-element-01.png" class="banner1" alt="">
-            <img src="./images/heroSection/imgi_28_banner-element-02.png" class="banner2" alt="">
+          <img
+            src="assets/img/banner/imgi_27_banner-element-01.png"
+            class="banner1"
+            alt=""
+          />
+          <img
+            src="assets/img/banner/imgi_28_banner-element-02.png"
+            class="banner2"
+            alt=""
+          />
         </div>
 
-        <div class="services container-fluid rounded-3   bg-white py-4 px-4 z-2  position-absolute">
-          <div class="services-container  container d-flex justify-content-between">
-            <span class="service d-flex flex-column justify-content-center gap-1">
-              <span class="icon-container bg-milky  m-auto align-items-center rounded-circle d-flex justify-content-center">
-                <i class="service-icon   text-white     fa-regular fa-calendar-days"></i>
+        <div
+          class="services container-fluid rounded-3 bg-white py-4 px-4 z-2 position-absolute"
+        >
+          <div
+            class="services-container container d-flex justify-content-between"
+          >
+            <span
+              class="service d-flex flex-column justify-content-center gap-1"
+            >
+              <span
+                class="icon-container bg-milky m-auto align-items-center rounded-circle d-flex justify-content-center"
+              >
+                <i
+                  class="service-icon text-white fa-regular fa-calendar-days"
+                ></i>
               </span>
               <p class="fw-semibold">Book Appoinment</p>
             </span>
-            <span class="service d-flex flex-column justify-content-center gap-1">
-                           <span class="icon-container bg-blue  m-auto align-items-center rounded-circle d-flex justify-content-center">
-                <i class="service-icon   text-white     fa-solid fa-user-group"></i>
+            <span
+              class="service d-flex flex-column justify-content-center gap-1"
+            >
+              <span
+                class="icon-container bg-blue m-auto align-items-center rounded-circle d-flex justify-content-center"
+              >
+                <i class="service-icon text-white fa-solid fa-user-group"></i>
               </span>
               <p class="fw-semibold">Talk to Doctors</p>
             </span>
-            <span class="d-flex service flex-column justify-content-center gap-1">
-                          <span class="icon-container bg-pink  m-auto align-items-center rounded-circle d-flex justify-content-center">
-                <i class="service-icon   text-white     fa-solid fa-house-chimney-medical"></i>
+            <span
+              class="d-flex service flex-column justify-content-center gap-1"
+            >
+              <span
+                class="icon-container bg-pink m-auto align-items-center rounded-circle d-flex justify-content-center"
+              >
+                <i
+                  class="service-icon text-white fa-solid fa-house-chimney-medical"
+                ></i>
               </span>
               <p class="fw-semibold">Hospitals & Clincs</p>
             </span>
-            <span class="d-flex service flex-column justify-content-center gap-1">
-                           <span class="icon-container bg-cyan  m-auto align-items-center rounded-circle d-flex justify-content-center">
-                <i class="service-icon   text-white     fa-solid fa-heart-circle-check"></i>
+            <span
+              class="d-flex service flex-column justify-content-center gap-1"
+            >
+              <span
+                class="icon-container bg-cyan m-auto align-items-center rounded-circle d-flex justify-content-center"
+              >
+                <i
+                  class="service-icon text-white fa-solid fa-heart-circle-check"
+                ></i>
               </span>
               <p class="fw-semibold">Healthcare</p>
             </span>
-            <span class="d-flex service flex-column justify-content-center gap-1">
-                            <span class="icon-container bg-purple  m-auto align-items-center rounded-circle d-flex justify-content-center">
-                <i class="service-icon   text-white     fa-solid fa-capsules"></i>
+            <span
+              class="d-flex service flex-column justify-content-center gap-1"
+            >
+              <span
+                class="icon-container bg-purple m-auto align-items-center rounded-circle d-flex justify-content-center"
+              >
+                <i class="service-icon text-white fa-solid fa-capsules"></i>
               </span>
               <p class="fw-semibold">Medicine & Sipplies</p>
             </span>
-            <span class="d-flex service flex-column justify-content-center gap-1">
-                          <span class="icon-container bg-orange  m-auto align-items-center rounded-circle d-flex justify-content-center">
-                <i class="service-icon   text-white     fa-solid fa-envelope-open-text"></i>
+            <span
+              class="d-flex service flex-column justify-content-center gap-1"
+            >
+              <span
+                class="icon-container bg-orange m-auto align-items-center rounded-circle d-flex justify-content-center"
+              >
+                <i
+                  class="service-icon text-white fa-solid fa-envelope-open-text"
+                ></i>
               </span>
               <p class="fw-semibold">Lab Testing</p>
             </span>
-            <span class="d-flex service flex-column justify-content-center gap-1">
-                           <span class="icon-container bg-teal  m-auto align-items-center rounded-circle d-flex justify-content-center">
-                <i class="service-icon   text-white     fa-solid fa-hand-holding-medical"></i>
+            <span
+              class="d-flex service flex-column justify-content-center gap-1"
+            >
+              <span
+                class="icon-container bg-teal m-auto align-items-center rounded-circle d-flex justify-content-center"
+              >
+                <i
+                  class="service-icon text-white fa-solid fa-hand-holding-medical"
+                ></i>
               </span>
               <p class="fw-semibold">Home Care</p>
             </span>
-
           </div>
         </div>
-    </div>
+      </section>
 
+      <!-- Care & Support Section  -->
 
-
-
-    <!-- Care & Support Section  -->
-
-    <div class="support-section ">
-      <div class="container ">
-        <div class="support-header">
-          <h6 class="special-h6 py-1 px-4 m-auto  rounded-pill primary-background-color text-white position-relative z-2">Top Specialties</h5>
-          <h2 class="fw-bold fs-1 text-center mt-3">Highlighting the <span class="text-blue">Care & Support</span> </h2>
-        </div>
-
-            <div class="support-cards slick-slider mt-3 ">
-              <div class="support-card p-3 ">
-                <div href="" class="img-wrapper">
-                  <img  class="w-100" src="./images/supportSection/imgi_38_speciality-04.jpg" alt="">
-                  <div class="support-card-icon ">
-                    <img src="./images/supportSection/specialityIcons/imgi_39_speciality-icon-04.svg" alt="">
-                  </div>
-                </div>
-                <a href="" class="text-dark"><h4 class="text-center mt-3 fw-bold">Pediatrics</h4></a>
-                <p class="text-center text-darkgray">124 Doctors</p>
-              </div>
-              <div class="support-card p-3 ">
-                <div href="" class="img-wrapper">
-                  <img  class="w-100" src="./images/supportSection/imgi_40_speciality-05.jpg" alt="">
-                  <div class="support-card-icon ">
-                    <img src="./images/supportSection/specialityIcons/imgi_41_speciality-icon-05.svg" alt="">
-                  </div>
-                </div>
-                <a href="" class="text-dark"><h4 class="text-center mt-3 fw-bold">Psychiatry</h4></a>
-                <p class="text-center text-darkgray">112 Doctors</p>
-              </div>
-              <div class="support-card p-3 ">
-                <div href="" class="img-wrapper">
-                  <img  class="w-100" src="./images/supportSection/imgi_42_speciality-06.jpg" alt="">
-                  <div class="support-card-icon ">
-                    <img src="./images/supportSection/specialityIcons/imgi_43_speciality-icon-06.svg" alt="">
-                  </div>
-                </div>
-                <a href="" class="text-dark"><h4 class="text-center mt-3 fw-bold">Endocrinology</h4></a>
-                <p class="text-center text-darkgray">104 Doctors</p>
-              </div>
-              <div class="support-card p-3 ">
-                <div href="" class="img-wrapper">
-                  <img  class="w-100" src="./images/supportSection/imgi_44_speciality-07.jpg" alt="">
-                  <div class="support-card-icon ">
-                    <img src="./images/supportSection/specialityIcons/imgi_45_speciality-icon-07.svg" alt="">
-                  </div>
-                </div>
-                <a href="" class="text-dark"><h4 class="text-center mt-3 fw-bold">Pulmonology</h4></a>
-                <p class="text-center text-darkgray">176 Doctors</p>
-              </div>
-              <div class="support-card p-3 ">
-                <div href="" class="img-wrapper">
-                  <img  class="w-100" src="./images/supportSection/imgi_46_speciality-08.jpg" alt="">
-                  <div class="support-card-icon ">
-                    <img src="./images/supportSection/specialityIcons/imgi_47_speciality-icon-08.svg" alt="">
-                  </div>
-                </div>
-                <a href="" class="text-dark"><h4 class="text-center mt-3 fw-bold">Urology</h4></a>
-                <p class="text-center text-darkgray">94 Doctors</p>
-              </div>
-              <div class="support-card p-3 ">
-                <div href="" class="img-wrapper">
-                  <img  class="w-100" src="./images/supportSection/imgi_48_speciality-03.jpg" alt="">
-                  <div class="support-card-icon ">
-                    <img src="./images/supportSection/specialityIcons/imgi_49_speciality-icon-03.svg" alt="">
-                  </div>
-                </div>
-                <a href="" class="text-dark"><h4 class="text-center mt-3 fw-bold">Nuerology</h4></a>
-                <p class="text-center text-darkgray">43 Doctors</p>
-              </div>
-              <div class="support-card p-3 ">
-                <div href="" class="img-wrapper">
-                  <img  class="w-100" src="./images/supportSection/imgi_50_speciality-01.jpg" alt="">
-                  <div class="support-card-icon ">
-                    <img src="./images/supportSection/specialityIcons/imgi_51_speciality-icon-01.svg" alt="">
-                  </div>
-                </div>
-                <a href="" class="text-dark"><h4 class="text-center mt-3 fw-bold">Cardiology</h4></a>
-                <p class="text-center text-darkgray">254 Doctors</p>
-              </div>
-              <div class="support-card p-3 ">
-                <div href="" class="img-wrapper">
-                  <img  class="w-100" src="./images/supportSection/imgi_52_speciality-02.jpg" alt="">
-                  <div class="support-card-icon ">
-                    <img src="./images/supportSection/specialityIcons/imgi_53_speciality-icon-02.svg" alt="">
-                  </div>
-                </div>
-                <a href="" class="text-dark"><h4 class="text-center mt-3 fw-bold">Orthopedics</h4></a>
-                <p class="text-center text-darkgray">151 Doctors</p>
-              </div>
-
-
-              <div class="slick-btn">
-                <button type="button" class="slick-prev " ></button>
-              </div>
-            </div>
-
-        </div>
-    </div>
-
-
-          <!-- Highlighted Doctors Section -->
-    <div class="doctors-section">
+      <section class="support-section">
         <div class="container">
-            <div class="doctors-header mb-5">
-              <h6 class="special-h6 py-1 px-4 m-auto  rounded-pill primary-background-color text-white position-relative z-2">Featured Doctors</h5>
-              <h2 class="fw-bold fs-1 text-center mt-3">Our <span class="text-blue">Highlighted </span>Doctor </h2>
+          <div class="support-header text-center">
+            <h6
+              class="special-h6 py-1 px-4 m-auto rounded-pill primary-background-color text-white position-relative z-2"
+            >
+              Top Specialties
+            </h6>
+            <h2 class="fw-bold fs-1 text-center mt-3">
+              Highlighting the <span class="text-blue">Care & Support</span>
+            </h2>
+          </div>
+
+          <div class="support-cards slick-slider mt-3">
+            <div class="support-card p-3">
+              <div href="" class="img-wrapper">
+                <img
+                  class="w-100"
+                  src="assets/img/banner/imgi_38_speciality-04.jpg"
+                  alt=""
+                />
+                <div class="support-card-icon">
+                  <img
+                    src="assets/img/banner/specialityIcons/imgi_39_speciality-icon-04.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <a href="" class="text-dark"
+                ><h4 class="text-center mt-3 fw-bold">Pediatrics</h4></a
+              >
+              <p class="text-center text-darkgray">124 Doctors</p>
+            </div>
+            <div class="support-card p-3">
+              <div href="" class="img-wrapper">
+                <img
+                  class="w-100"
+                  src="assets/img/banner/imgi_40_speciality-05.jpg"
+                  alt=""
+                />
+                <div class="support-card-icon">
+                  <img
+                    src="assets/img/banner/specialityIcons/imgi_41_speciality-icon-05.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <a href="" class="text-dark"
+                ><h4 class="text-center mt-3 fw-bold">Psychiatry</h4></a
+              >
+              <p class="text-center text-darkgray">112 Doctors</p>
+            </div>
+            <div class="support-card p-3">
+              <div href="" class="img-wrapper">
+                <img
+                  class="w-100"
+                  src="assets/img/banner/imgi_42_speciality-06.jpg"
+                  alt=""
+                />
+                <div class="support-card-icon">
+                  <img
+                    src="assets/img/banner/specialityIcons/imgi_43_speciality-icon-06.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <a href="" class="text-dark"
+                ><h4 class="text-center mt-3 fw-bold">Endocrinology</h4></a
+              >
+              <p class="text-center text-darkgray">104 Doctors</p>
+            </div>
+            <div class="support-card p-3">
+              <div href="" class="img-wrapper">
+                <img
+                  class="w-100"
+                  src="assets/img/banner/imgi_44_speciality-07.jpg"
+                  alt=""
+                />
+                <div class="support-card-icon">
+                  <img
+                    src="assets/img/banner/specialityIcons/imgi_45_speciality-icon-07.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <a href="" class="text-dark"
+                ><h4 class="text-center mt-3 fw-bold">Pulmonology</h4></a
+              >
+              <p class="text-center text-darkgray">176 Doctors</p>
+            </div>
+            <div class="support-card p-3">
+              <div href="" class="img-wrapper">
+                <img
+                  class="w-100"
+                  src="assets/img/banner/imgi_46_speciality-08.jpg"
+                  alt=""
+                />
+                <div class="support-card-icon">
+                  <img
+                    src="assets/img/banner/specialityIcons/imgi_47_speciality-icon-08.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <a href="" class="text-dark"
+                ><h4 class="text-center mt-3 fw-bold">Urology</h4></a
+              >
+              <p class="text-center text-darkgray">94 Doctors</p>
+            </div>
+            <div class="support-card p-3">
+              <div href="" class="img-wrapper">
+                <img
+                  class="w-100"
+                  src="assets/img/banner/imgi_48_speciality-03.jpg"
+                  alt=""
+                />
+                <div class="support-card-icon">
+                  <img
+                    src="assets/img/banner/specialityIcons/imgi_49_speciality-icon-03.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <a href="" class="text-dark"
+                ><h4 class="text-center mt-3 fw-bold">Nuerology</h4></a
+              >
+              <p class="text-center text-darkgray">43 Doctors</p>
+            </div>
+            <div class="support-card p-3">
+              <div href="" class="img-wrapper">
+                <img
+                  class="w-100"
+                  src="assets/img/banner/imgi_50_speciality-01.jpg"
+                  alt=""
+                />
+                <div class="support-card-icon">
+                  <img
+                    src="assets/img/banner/specialityIcons/imgi_51_speciality-icon-01.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <a href="" class="text-dark"
+                ><h4 class="text-center mt-3 fw-bold">Cardiology</h4></a
+              >
+              <p class="text-center text-darkgray">254 Doctors</p>
+            </div>
+            <div class="support-card p-3">
+              <div href="" class="img-wrapper">
+                <img
+                  class="w-100"
+                  src="assets/img/banner/imgi_52_speciality-02.jpg"
+                  alt=""
+                />
+                <div class="support-card-icon">
+                  <img
+                    src="assets/img/banner/specialityIcons/imgi_53_speciality-icon-02.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <a href="" class="text-dark"
+                ><h4 class="text-center mt-3 fw-bold">Orthopedics</h4></a
+              >
+              <p class="text-center text-darkgray">151 Doctors</p>
             </div>
 
-            
-            <div class=" doctors-cards">
-              <div class="card doctor-card" style="width: 18.7rem; margin: 0 1rem;">
-               <a href="" class="img-wrapper position-relative ">
-                <img src="./images/featuredDoctors/imgi_54_doctor-grid-02.jpg" class="card-img-top" alt="...">
-                <span class="rating-banner text-white bg-orange rounded-3 fw-bold">
-                  <i class="fa-solid fa-star "></i> 4.2
-                </span>
-                <span class="heart-icon rounded-circle bg-white d-flex align-items-center justify-content-center">
-                  <i class="fa-solid fa-heart"></i>
-                </span>
-              </a> 
-                <div class="card-body p-0 ">
-                  <span class="d-flex my-3 align-items-center justify-content-between">
-                    <p class="doctor-speciality1 mb-0 fw-semibold text-pink">Pediatrician</p>
-                    <span class="doctor-status rounded-pill fw-semibold me-4">Available</span>
-                  </span>
-                  <div class="px-3">
-                      <h4 class="card-title fw-bold">Dr. Nicholas Tello</h5>
-                      <span class="doctor-details d-flex align-items-center text-darkgray pb-3 ">
-                        <i class="fa-solid fa-location-dot me-2"></i>
-                        <p class="mb-0 doctor-location position-relative me-4">Ogden, IA</p>
-                        <p class="mb-0 ">30 Min</p>
-                      </span>
-                  </div>
-                  <div class="fees py-3 px-3 d-flex align-items-center justify-content-between">
-                     <div>
-                        <p class="text-darkgray mb-2">Consultation Fees</p>
-                        <span class="fw-bold text-orange fs-4">$500</span>
-                     </div>
-                     <a href="" class="calender-icon d-flex align-items-center justify-content-center"><i class="fa-regular fa-calendar-days"></i></a>
-
-                  </div>
-
-                </div>
-              </div>
-              <div class="card doctor-card" style="width: 18.7rem; margin: 0 1rem;">
-               <a href="" class="img-wrapper position-relative">
-                <img src="./images/featuredDoctors/imgi_55_doctor-grid-03.jpg" class="card-img-top" alt="...">
-                <span class="rating-banner text-white bg-orange rounded-3 fw-bold">
-                  <i class="fa-solid fa-star "></i> 4.2
-                </span>
-                <span class="heart-icon rounded-circle bg-white d-flex align-items-center justify-content-center">
-                  <i class="fa-solid fa-heart"></i>
-                </span>
-              </a> 
-                <div class="card-body p-0 ">
-                  <span class="d-flex my-3 align-items-center justify-content-between">
-                    <p class="doctor-speciality2 mb-0 fw-semibold text-teal">Neurologist</p>
-                    <span class="doctor-status rounded-pill fw-semibold me-4">Available</span>
-                  </span>
-                  <div class="px-3">
-                      <h4 class="card-title fw-bold">Dr. Harlod Bryant</h5>
-                      <span class="doctor-details d-flex align-items-center text-darkgray pb-3 ">
-                        <i class="fa-solid fa-location-dot me-2"></i>
-                        <p class="mb-0 doctor-location position-relative me-4">Winona, MS</p>
-                        <p class="mb-0 ">30 Min</p>
-                      </span>
-                  </div>
-                  <div class="fees py-3 px-3 d-flex align-items-center justify-content-between">
-                     <div>
-                        <p class="text-darkgray mb-2">Consultation Fees</p>
-                        <span class="fw-bold text-orange fs-4">$500</span>
-                     </div>
-                     <a href="" class="calender-icon d-flex align-items-center justify-content-center"><i class="fa-regular fa-calendar-days"></i></a>
-
-                  </div>
-
-                </div>
-              </div>
-              <div class="card doctor-card" style="width: 18.7rem; margin: 0 1rem;">
-               <a href="" class="img-wrapper position-relative">
-                <img src="./images/featuredDoctors/imgi_56_doctor-grid-04.jpg" class="card-img-top" alt="...">
-                <span class="rating-banner text-white bg-orange rounded-3 fw-bold">
-                  <i class="fa-solid fa-star "></i> 4.2
-                </span>
-                <span class="heart-icon rounded-circle bg-white d-flex align-items-center justify-content-center">
-                  <i class="fa-solid fa-heart"></i>
-                </span>
-              </a> 
-                <div class="card-body p-0 ">
-                  <span class="d-flex my-3 align-items-center justify-content-between">
-                    <p class="doctor-speciality3 mb-0 fw-semibold text-blue">Cardiologist</p>
-                    <span class="doctor-status rounded-pill fw-semibold me-4">Available</span>
-                  </span>
-                  <div class="px-3">
-                      <h4 class="card-title fw-bold">Dr. Sandra Jhons</h5>
-                      <span class="doctor-details d-flex align-items-center text-darkgray pb-3 ">
-                        <i class="fa-solid fa-location-dot me-2"></i>
-                        <p class="mb-0 doctor-location position-relative me-4">Beckely, WV</p>
-                        <p class="mb-0 ">30 Min</p>
-                      </span>
-                  </div>
-                  <div class="fees py-3 px-3 d-flex align-items-center justify-content-between">
-                     <div>
-                        <p class="text-darkgray mb-2">Consultation Fees</p>
-                        <span class="fw-bold text-orange fs-4">$550</span>
-                     </div>
-                     <a href="" class="calender-icon d-flex align-items-center justify-content-center"><i class="fa-regular fa-calendar-days"></i></a>
-
-                  </div>
-
-                </div>
-              </div>
-              <div class="card doctor-card" style="width: 18.7rem; margin: 0 1rem;">
-               <a href="" class="img-wrapper position-relative">
-                <img src="./images/featuredDoctors/imgi_57_doctor-grid-05.jpg" class="card-img-top" alt="...">
-                <span class="rating-banner text-white bg-orange rounded-3 fw-bold">
-                  <i class="fa-solid fa-star "></i> 4.2
-                </span>
-                <span class="heart-icon rounded-circle bg-white d-flex align-items-center justify-content-center">
-                  <i class="fa-solid fa-heart"></i>
-                </span>
-              </a> 
-                <div class="card-body p-0 ">
-                  <span class="d-flex my-3 align-items-center justify-content-between">
-                    <p class="doctor-speciality4 mb-0 fw-semibold text-teal">Neorologist</p>
-                    <span class="doctor-status rounded-pill fw-semibold me-4">Available</span>
-                  </span>
-                  <div class="px-3">
-                      <h4 class="card-title fw-bold">Dr. Charles Scott</h5>
-                      <span class="doctor-details d-flex align-items-center text-darkgray pb-3 ">
-                        <i class="fa-solid fa-location-dot me-2"></i>
-                        <p class="mb-0 doctor-location position-relative me-4">Hamshire, TX</p>
-                        <p class="mb-0 ">30 Min</p>
-                      </span>
-                  </div>
-                  <div class="fees py-3 px-3 d-flex align-items-center justify-content-between">
-                     <div>
-                        <p class="text-darkgray mb-2">Consultation Fees</p>
-                        <span class="fw-bold text-orange fs-4">$600</span>
-                     </div>
-                     <a href="" class="calender-icon d-flex align-items-center justify-content-center"><i class="fa-regular fa-calendar-days"></i></a>
-
-                  </div>
-
-                </div>
-              </div>
-              <div class="card doctor-card" style="width: 18.7rem; margin: 0 1rem;">
-               <a href="" class="img-wrapper position-relative">
-                <img src="./images/featuredDoctors/imgi_58_doctor-grid-01.jpg" class="card-img-top" alt="...">
-                <span class="rating-banner text-white bg-orange rounded-3 fw-bold">
-                  <i class="fa-solid fa-star "></i> 4.2
-                </span>
-                <span class="heart-icon rounded-circle bg-white d-flex align-items-center justify-content-center">
-                  <i class="fa-solid fa-heart"></i>
-                </span>
-              </a> 
-                <div class="card-body p-0 ">
-                  <span class="d-flex my-3 align-items-center justify-content-between">
-                    <p class="doctor-speciality5 mb-0 fw-semibold text-purple">Psychologist</p>
-                    <span class="doctor-status rounded-pill fw-semibold me-4">Available</span>
-                  </span>
-                  <div class="px-3">
-                      <h4 class="card-title fw-bold">Dr. Michael Browen</h5>
-                      <span class="doctor-details d-flex align-items-center text-darkgray pb-3 ">
-                        <i class="fa-solid fa-location-dot me-2"></i>
-                        <p class="mb-0 doctor-location position-relative me-4">Minneapolis, MN</p>
-                        <p class="mb-0 ">30 Min</p>
-                      </span>
-                  </div>
-                  <div class="fees py-3 px-3 d-flex align-items-center justify-content-between">
-                     <div>
-                        <p class="text-darkgray mb-2">Consultation Fees</p>
-                        <span class="fw-bold text-orange fs-4">$650</span>
-                     </div>
-                     <a href="" class="calender-icon d-flex align-items-center justify-content-center"><i class="fa-regular fa-calendar-days"></i></a>
-
-                  </div>
-
-                </div>
-              </div>
-
+            <div class="slick-btn">
+              <button type="button" class="slick-prev"></button>
             </div>
           </div>
-    </div>
-
-
-    <!-- Reasons To Choose Section -->
-
-    <div class="reasonsToChoose">
-      <div class="container">
-            <div class="reasons-header mb-5">
-              <h6 class="special-h6 py-1 px-4 m-auto  rounded-pill primary-background-color text-white position-relative z-2">Why Book With Us</h5>
-              <h2 class="fw-bold fs-1 text-center mt-3">Compelling <span class="text-blue">Reasons </span>to Choose </h2>
-            </div>
-
-            <div class="reasons-cards mt-4 d-flex align-items-center w-100 justify-content-center">
-              <div class="reasons-card  border border-gray rounded-4 bg-white text-center mx-3">
-                <span class="card-icon icon1"><i class="fa-solid fa-user-shield d-flex align-items-center justify-content-center mx-auto"></i></span>
-                <div class="card-content">
-                  <h4 class="fw-bold mb-2">Follow-Up Care</h4>
-                  <p class="text-darkgray">We ensure continuity of care through regular follow-ups and communication, helping you stay on track with health goals.</p>
-                </div>
-              </div>
-              <div class="reasons-card  border border-gray rounded-4 bg-white text-center mx-3">
-                <span class="card-icon icon2"><i class="fa-solid fa-microphone-lines d-flex align-items-center justify-content-center mx-auto"></i></span>
-                <div class="card-content">
-                  <h4 class="fw-bold mb-2">Follow-Up Care</h4>
-                  <p class="text-darkgray">We ensure continuity of care through regular follow-ups and communication, helping you stay on track with health goals.</p>
-                </div>
-              </div>
-              <div class="reasons-card  border border-gray rounded-4 bg-white text-center mx-3">
-                <span class="card-icon icon3"><i class="fa-solid fa-house-chimney-medical d-flex align-items-center justify-content-center mx-auto"></i></span>
-                <div class="card-content">
-                  <h4 class="fw-bold mb-2">Follow-Up Care</h4>
-                  <p class="text-darkgray">We ensure continuity of care through regular follow-ups and communication, helping you stay on track with health goals.</p>
-                </div>
-              </div>
-
-
-            </div>
-      </div>
-        <img src="./images/reasonsToChoose/imgi_59_reason-bg-one.png" alt="" class="img1">
-        <img src="./images/reasonsToChoose/imgi_60_reason-bg-two.png" alt="" class="img2">
-    </div>
-
-
-    <div class="about-us position-relative overflow-hidden py-5">
-      <div class="container d-flex gap-5 align-items-center position-relative ">
-        <div class="about-us-imgs w-50 py-3 d-flex flex-column justify-content-center gap-3">
-          <div class="single-img" >
-            <img src="./images/aboutUs/imgi_61_book-01.jpg" alt="" class="w-100 rounded-3 ">
-          </div>
-          <div class="d-flex gap-3 two-imgs">
-            <img src="./images/aboutUs/imgi_62_book-02.jpg" alt="" class=" rounded-3 ">
-            <img src="./images/aboutUs/imgi_63_book-03.jpg" alt="" class=" rounded-3">
-          </div>
-          <a href="https://youtu.be/MyQxnFgPgQU"
-            class="circle-text position-absolute start-0 top-50 translate-middle-y"
-            target="_blank">
-
-            <div class="circle-rotate w-100 h-100 ">
-              <p class="button-text rounded-circle  ">
-                <span style="--i:0">P</span>
-                <span style="--i:1">l</span>
-                <span style="--i:2">a</span>
-                <span style="--i:3">y</span>
-                <span style="--i:4"> </span>
-                <span style="--i:5">V</span>
-                <span style="--i:6">i</span>
-                <span style="--i:7">d</span>
-                <span style="--i:8">e</span>
-                <span style="--i:9">o</span>
-                <span style="--i:10"> • </span>
-                <span style="--i:11">P</span>
-                <span style="--i:12">l</span>
-                <span style="--i:13">a</span>
-                <span style="--i:14">y</span>
-                <span style="--i:15"> </span>
-                <span style="--i:16">V</span>
-                <span style="--i:17">i</span>
-                <span style="--i:18">d</span>
-                <span style="--i:19">e</span>
-                <span style="--i:20">o</span>
-                <span style="--i:21"> • </span>
-              </p>
-            </div>
-
-            <span class="play-icon">
-              <i class="fa-solid fa-play"></i>
-            </span>
-          </a>
-
-
         </div>
-        <div class="about-us-content mt-5 w-50">
+      </section>
+
+      <!-- Highlighted Doctors Section -->
+      <section class="doctors-section">
+        <div class="container">
+          <div class="doctors-header mb-5 text-center">
+            <h6
+              class="special-h6 py-1 px-4 m-auto rounded-pill primary-background-color text-white position-relative z-2"
+            >
+              Featured Doctors
+            </h6>
+            <h2 class="fw-bold fs-1 text-center mt-3">
+              Our <span class="text-blue">Highlighted </span>Doctor
+            </h2>
+          </div>
+
+          <div class="doctors-cards">
+            <div
+              class="card doctor-card"
+              style="width: 18.7rem; margin: 0 1rem"
+            >
+              <a href="" class="img-wrapper position-relative">
+                <img
+                  src="assets/img/featuredDoctors/imgi_54_doctor-grid-02.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <span
+                  class="rating-banner text-white bg-orange rounded-3 fw-bold"
+                >
+                  <i class="fa-solid fa-star"></i> 4.2
+                </span>
+                <span
+                  class="heart-icon rounded-circle bg-white d-flex align-items-center justify-content-center"
+                >
+                  <i class="fa-solid fa-heart"></i>
+                </span>
+              </a>
+              <div class="card-body p-0">
+                <span
+                  class="d-flex my-3 align-items-center justify-content-between"
+                >
+                  <p class="doctor-speciality1 mb-0 fw-semibold text-pink">
+                    Pediatrician
+                  </p>
+                  <span class="doctor-status rounded-pill fw-semibold me-4"
+                    >Available</span
+                  >
+                </span>
+                <div class="px-3">
+                  <h4 class="card-title fw-bold">Dr. Nicholas Tello</h4>
+                  <span
+                    class="doctor-details d-flex align-items-center text-darkgray pb-3"
+                  >
+                    <i class="fa-solid fa-location-dot me-2"></i>
+                    <p class="mb-0 doctor-location position-relative me-4">
+                      Ogden, IA
+                    </p>
+                    <p class="mb-0">30 Min</p>
+                  </span>
+                </div>
+                <div
+                  class="fees py-3 px-3 d-flex align-items-center justify-content-between"
+                >
+                  <div>
+                    <p class="text-darkgray mb-2">Consultation Fees</p>
+                    <span class="fw-bold text-orange fs-4">$500</span>
+                  </div>
+                  <a
+                    href=""
+                    class="calender-icon d-flex align-items-center justify-content-center"
+                    ><i class="fa-regular fa-calendar-days"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="card doctor-card"
+              style="width: 18.7rem; margin: 0 1rem"
+            >
+              <a href="" class="img-wrapper position-relative">
+                <img
+                  src="assets/img/featuredDoctors/imgi_55_doctor-grid-03.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <span
+                  class="rating-banner text-white bg-orange rounded-3 fw-bold"
+                >
+                  <i class="fa-solid fa-star"></i> 4.2
+                </span>
+                <span
+                  class="heart-icon rounded-circle bg-white d-flex align-items-center justify-content-center"
+                >
+                  <i class="fa-solid fa-heart"></i>
+                </span>
+              </a>
+              <div class="card-body p-0">
+                <span
+                  class="d-flex my-3 align-items-center justify-content-between"
+                >
+                  <p class="doctor-speciality2 mb-0 fw-semibold text-teal">
+                    Neurologist
+                  </p>
+                  <span class="doctor-status rounded-pill fw-semibold me-4"
+                    >Available</span
+                  >
+                </span>
+                <div class="px-3">
+                  <h4 class="card-title fw-bold">Dr. Harlod Bryant</h4>
+                  <span
+                    class="doctor-details d-flex align-items-center text-darkgray pb-3"
+                  >
+                    <i class="fa-solid fa-location-dot me-2"></i>
+                    <p class="mb-0 doctor-location position-relative me-4">
+                      Winona, MS
+                    </p>
+                    <p class="mb-0">30 Min</p>
+                  </span>
+                </div>
+                <div
+                  class="fees py-3 px-3 d-flex align-items-center justify-content-between"
+                >
+                  <div>
+                    <p class="text-darkgray mb-2">Consultation Fees</p>
+                    <span class="fw-bold text-orange fs-4">$500</span>
+                  </div>
+                  <a
+                    href=""
+                    class="calender-icon d-flex align-items-center justify-content-center"
+                    ><i class="fa-regular fa-calendar-days"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="card doctor-card"
+              style="width: 18.7rem; margin: 0 1rem"
+            >
+              <a href="" class="img-wrapper position-relative">
+                <img
+                  src="assets/img/featuredDoctors/imgi_56_doctor-grid-04.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <span
+                  class="rating-banner text-white bg-orange rounded-3 fw-bold"
+                >
+                  <i class="fa-solid fa-star"></i> 4.2
+                </span>
+                <span
+                  class="heart-icon rounded-circle bg-white d-flex align-items-center justify-content-center"
+                >
+                  <i class="fa-solid fa-heart"></i>
+                </span>
+              </a>
+              <div class="card-body p-0">
+                <span
+                  class="d-flex my-3 align-items-center justify-content-between"
+                >
+                  <p class="doctor-speciality3 mb-0 fw-semibold text-blue">
+                    Cardiologist
+                  </p>
+                  <span class="doctor-status rounded-pill fw-semibold me-4"
+                    >Available</span
+                  >
+                </span>
+                <div class="px-3">
+                  <h4 class="card-title fw-bold">Dr. Sandra Jhons</h4>
+                  <span
+                    class="doctor-details d-flex align-items-center text-darkgray pb-3"
+                  >
+                    <i class="fa-solid fa-location-dot me-2"></i>
+                    <p class="mb-0 doctor-location position-relative me-4">
+                      Beckely, WV
+                    </p>
+                    <p class="mb-0">30 Min</p>
+                  </span>
+                </div>
+                <div
+                  class="fees py-3 px-3 d-flex align-items-center justify-content-between"
+                >
+                  <div>
+                    <p class="text-darkgray mb-2">Consultation Fees</p>
+                    <span class="fw-bold text-orange fs-4">$550</span>
+                  </div>
+                  <a
+                    href=""
+                    class="calender-icon d-flex align-items-center justify-content-center"
+                    ><i class="fa-regular fa-calendar-days"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="card doctor-card"
+              style="width: 18.7rem; margin: 0 1rem"
+            >
+              <a href="" class="img-wrapper position-relative">
+                <img
+                  src="assets/img/featuredDoctors/imgi_57_doctor-grid-05.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <span
+                  class="rating-banner text-white bg-orange rounded-3 fw-bold"
+                >
+                  <i class="fa-solid fa-star"></i> 4.2
+                </span>
+                <span
+                  class="heart-icon rounded-circle bg-white d-flex align-items-center justify-content-center"
+                >
+                  <i class="fa-solid fa-heart"></i>
+                </span>
+              </a>
+              <div class="card-body p-0">
+                <span
+                  class="d-flex my-3 align-items-center justify-content-between"
+                >
+                  <p class="doctor-speciality4 mb-0 fw-semibold text-teal">
+                    Neorologist
+                  </p>
+                  <span class="doctor-status rounded-pill fw-semibold me-4"
+                    >Available</span
+                  >
+                </span>
+                <div class="px-3">
+                  <h4 class="card-title fw-bold">Dr. Charles Scott</h4>
+                  <span
+                    class="doctor-details d-flex align-items-center text-darkgray pb-3"
+                  >
+                    <i class="fa-solid fa-location-dot me-2"></i>
+                    <p class="mb-0 doctor-location position-relative me-4">
+                      Hamshire, TX
+                    </p>
+                    <p class="mb-0">30 Min</p>
+                  </span>
+                </div>
+                <div
+                  class="fees py-3 px-3 d-flex align-items-center justify-content-between"
+                >
+                  <div>
+                    <p class="text-darkgray mb-2">Consultation Fees</p>
+                    <span class="fw-bold text-orange fs-4">$600</span>
+                  </div>
+                  <a
+                    href=""
+                    class="calender-icon d-flex align-items-center justify-content-center"
+                    ><i class="fa-regular fa-calendar-days"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="card doctor-card"
+              style="width: 18.7rem; margin: 0 1rem"
+            >
+              <a href="" class="img-wrapper position-relative">
+                <img
+                  src="assets/img/featuredDoctors/imgi_58_doctor-grid-01.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <span
+                  class="rating-banner text-white bg-orange rounded-3 fw-bold"
+                >
+                  <i class="fa-solid fa-star"></i> 4.2
+                </span>
+                <span
+                  class="heart-icon rounded-circle bg-white d-flex align-items-center justify-content-center"
+                >
+                  <i class="fa-solid fa-heart"></i>
+                </span>
+              </a>
+              <div class="card-body p-0">
+                <span
+                  class="d-flex my-3 align-items-center justify-content-between"
+                >
+                  <p class="doctor-speciality5 mb-0 fw-semibold text-purple">
+                    Psychologist
+                  </p>
+                  <span class="doctor-status rounded-pill fw-semibold me-4"
+                    >Available</span
+                  >
+                </span>
+                <div class="px-3">
+                  <h4 class="card-title fw-bold">Dr. Michael Browen</h4>
+                  <span
+                    class="doctor-details d-flex align-items-center text-darkgray pb-3"
+                  >
+                    <i class="fa-solid fa-location-dot me-2"></i>
+                    <p class="mb-0 doctor-location position-relative me-4">
+                      Minneapolis, MN
+                    </p>
+                    <p class="mb-0">30 Min</p>
+                  </span>
+                </div>
+                <div
+                  class="fees py-3 px-3 d-flex align-items-center justify-content-between"
+                >
+                  <div>
+                    <p class="text-darkgray mb-2">Consultation Fees</p>
+                    <span class="fw-bold text-orange fs-4">$650</span>
+                  </div>
+                  <a
+                    href=""
+                    class="calender-icon d-flex align-items-center justify-content-center"
+                    ><i class="fa-regular fa-calendar-days"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Infinite Scrolling Text Section -->
+      <div class="scrolling-text-section wow fadeIn" data-wow-duration="1.5s">
+        <div class="scrolling-container">
+          <div class="scrolling-content">
+            <span>Hospitals & Clinics</span>
+            <div class="scroll-divider"></div>
+            <span>Health Care Services</span>
+            <div class="scroll-divider"></div>
+            <span>Talk to Doctors</span>
+            <div class="scroll-divider"></div>
+            <span>Home Care Services</span>
+            <div class="scroll-divider"></div>
+            <span>Multi Speciality Treatments & Doctors</span>
+            <div class="scroll-divider"></div>
+            <span>Lab Testing Services</span>
+            <div class="scroll-divider"></div>
+            <span>Medecines & Supplies</span>
+            <div class="scroll-divider"></div>
+          </div>
+          <!-- Duplicate for seamless loop -->
+          <div class="scrolling-content">
+            <span>Hospitals & Clinics</span>
+            <div class="scroll-divider"></div>
+            <span>Health Care Services</span>
+            <div class="scroll-divider"></div>
+            <span>Talk to Doctors</span>
+            <div class="scroll-divider"></div>
+            <span>Home Care Services</span>
+            <div class="scroll-divider"></div>
+            <span>Multi Speciality Treatments & Doctors</span>
+            <div class="scroll-divider"></div>
+            <span>Lab Testing Services</span>
+            <div class="scroll-divider"></div>
+            <span>Medecines & Supplies</span>
+            <div class="scroll-divider"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Reasons To Choose Section -->
+      <section class="reasonsToChoose">
+        <div class="container">
+          <div class="reasons-header mb-5 text-center">
+            <h6
+              class="special-h6 py-1 px-4 m-auto rounded-pill primary-background-color text-white position-relative z-2"
+            >
+              Why Book With Us
+            </h6>
+            <h2 class="fw-bold fs-1 text-center mt-3">
+              Compelling <span class="text-blue">Reasons </span>to Choose
+            </h2>
+          </div>
+
+          <div
+            class="reasons-cards mt-4 d-flex align-items-center w-100 justify-content-center"
+          >
+            <div
+              class="reasons-card border border-gray rounded-4 bg-white text-center mx-3"
+            >
+              <span class="card-icon icon1"
+                ><i
+                  class="fa-solid fa-user-shield d-flex align-items-center justify-content-center mx-auto"
+                ></i
+              ></span>
+              <div class="card-content">
+                <h4 class="fw-bold mb-2">Follow-Up Care</h4>
+                <p class="text-darkgray">
+                  We ensure continuity of care through regular follow-ups and
+                  communication, helping you stay on track with health goals.
+                </p>
+              </div>
+            </div>
+            <div
+              class="reasons-card border border-gray rounded-4 bg-white text-center mx-3"
+            >
+              <span class="card-icon icon2"
+                ><i
+                  class="fa-solid fa-microphone-lines d-flex align-items-center justify-content-center mx-auto"
+                ></i
+              ></span>
+              <div class="card-content">
+                <h4 class="fw-bold mb-2">Follow-Up Care</h4>
+                <p class="text-darkgray">
+                  We ensure continuity of care through regular follow-ups and
+                  communication, helping you stay on track with health goals.
+                </p>
+              </div>
+            </div>
+            <div
+              class="reasons-card border border-gray rounded-4 bg-white text-center mx-3"
+            >
+              <span class="card-icon icon3"
+                ><i
+                  class="fa-solid fa-house-chimney-medical d-flex align-items-center justify-content-center mx-auto"
+                ></i
+              ></span>
+              <div class="card-content">
+                <h4 class="fw-bold mb-2">Follow-Up Care</h4>
+                <p class="text-darkgray">
+                  We ensure continuity of care through regular follow-ups and
+                  communication, helping you stay on track with health goals.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img
+          src="assets/img/reasonsToChoose/imgi_59_reason-bg-one.png"
+          alt=""
+          class="img1"
+        />
+        <img
+          src="assets/img/reasonsToChoose/imgi_60_reason-bg-two.png"
+          alt=""
+          class="img2"
+        />
+      </section>
+
+      <section class="about-us position-relative overflow-hidden py-5">
+        <div
+          class="container d-flex gap-5 align-items-center position-relative"
+        >
+          <div
+            class="about-us-imgs w-50 py-3 d-flex flex-column justify-content-center gap-3"
+          >
+            <div class="single-img">
+              <img
+                src="assets/img/aboutUs/imgi_61_book-01.jpg"
+                alt="About Us Main"
+                class="w-100 rounded-3"
+              />
+            </div>
+            <div class="d-flex gap-3 two-imgs">
+              <img
+                src="assets/img/aboutUs/imgi_62_book-02.jpg"
+                alt="About Us Sub 1"
+                class="rounded-3"
+              />
+              <img
+                src="assets/img/aboutUs/imgi_63_book-03.jpg"
+                alt="About Us Sub 2"
+                class="rounded-3"
+              />
+            </div>
+            <a
+              href="#"
+              class="circle-text position-absolute start-0 top-50 translate-middle-y"
+              data-bs-toggle="modal"
+              data-bs-target="#videoModal"
+              aria-label="Play Video"
+            >
+              <div class="circle-rotate w-100 h-100">
+                <p class="button-text rounded-circle">
+                  <span style="--i: 0">P</span>
+                  <span style="--i: 1">l</span>
+                  <span style="--i: 2">a</span>
+                  <span style="--i: 3">y</span>
+                  <span style="--i: 4"> </span>
+                  <span style="--i: 5">V</span>
+                  <span style="--i: 6">i</span>
+                  <span style="--i: 7">d</span>
+                  <span style="--i: 8">e</span>
+                  <span style="--i: 9">o</span>
+                  <span style="--i: 10"> • </span>
+                  <span style="--i: 11">P</span>
+                  <span style="--i: 12">l</span>
+                  <span style="--i: 13">a</span>
+                  <span style="--i: 14">y</span>
+                  <span style="--i: 15"> </span>
+                  <span style="--i: 16">V</span>
+                  <span style="--i: 17">i</span>
+                  <span style="--i: 18">d</span>
+                  <span style="--i: 19">e</span>
+                  <span style="--i: 20">o</span>
+                  <span style="--i: 21"> • </span>
+                </p>
+              </div>
+
+              <span class="play-icon">
+                <i class="fa-solid fa-play"></i>
+              </span>
+            </a>
+          </div>
+          <div class="about-us-content mt-5 w-50">
             <div class="about-us-header mb-4">
-              <h6 class="special-h6 py-1 px-4  rounded-pill primary-background-color text-white position-relative z-2">About Us</h5>
-              <h2 class="fw-bold fs-1  mt-3 text-white ">We are committed to <br>understanding your 
-                  <span class="unique-text">
-                   unique<br>
-                      needs and delivering care.
-                  </span>
-               </h2>
-            <p class="text-white mt-4 mb-5">As a trusted health as a trusted healthcare provider in our community, we are<br> passionate  about promoting health and wellness beyond the clinic.</p>
+              <h6
+                class="special-h6 py-1 px-4 rounded-pill primary-background-color text-white position-relative z-2"
+              >
+                About Us
+              </h6>
+              <h2 class="fw-bold fs-1 mt-3 text-white">
+                We are committed to <br />understanding your
+                <span class="unique-text">
+                  unique<br />
+                  needs and delivering care.
+                </span>
+              </h2>
+              <p class="text-white mt-4 mb-5">
+                As a trusted health as a trusted healthcare provider in our
+                community, we are<br />
+                passionate about promoting health and wellness beyond the
+                clinic.
+              </p>
               <div class="accordion" id="accordionExample">
-
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-        Our Vision
-      </button>
-    </h2>
-    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        <p>We envision a community where everyone has access to high-quality healthcare and the resources they need to lead healthy, fulfilling lives.</p>
-      </div>
-    </div>
-  </div>
-  <div class="accordion-item mt-4">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-        Our Mission
-      </button>
-    </h2>
-    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        <p>We envision a community where everyone has access to high-quality healthcare and the resources they need to lead healthy, fulfilling lives.</p>
-      </div>
-    </div>
-  </div>
- 
-
-  </div>
-</div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      Our Vision
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseOne"
+                    class="accordion-collapse collapse show"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <p>
+                        We envision a community where everyone has access to
+                        high-quality healthcare and the resources they need to
+                        lead healthy, fulfilling lives.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item mt-4">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="collapseTwo"
+                    >
+                      Our Mission
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseTwo"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <p>
+                        We envision a community where everyone has access to
+                        high-quality healthcare and the resources they need to
+                        lead healthy, fulfilling lives.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
 
-        <div class="about-us-cards row row-cols-12 d-flex container m-auto mt-5 ">
+        <div
+          class="about-us-cards row row-cols-12 d-flex container m-auto mt-5"
+        >
           <div class="col-3 about-us-card p-2 text-white position-relative">
-            <div class=" bg-transparent p-4 text-center">
-              <span class="card-icon mb-4 bg-blue"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            <div class="bg-transparent p-4 text-center">
+              <span class="card-icon mb-4 bg-blue"
+                ><i class="fa-solid fa-magnifying-glass-plus"></i
+              ></span>
               <h3 class="mb-2">Search For Doctors</h3>
-              <p class="mb-0">Search for a doctor based on specialization, location, or availability for your Treatements</p>
+              <p class="mb-0">
+                Search for a doctor based on specialization, location, or
+                availability for your Treatements
+              </p>
               <span class="card-number">01</span>
-              <div class="card-img"><img src="./images/aboutUs/imgi_64_way-icon.svg" alt=""></div>
+              <div class="card-img">
+                <img src="assets/img/aboutUs/imgi_64_way-icon.svg" alt="" />
+              </div>
             </div>
           </div>
           <div class="col-3 about-us-card p-2 text-white">
-            <div class=" bg-transparent p-4 text-center position-relative">
-              <span class="card-icon mb-4 bg-orange"><i class="fa-solid fa-image-portrait"></i></span>
+            <div class="bg-transparent p-4 text-center position-relative">
+              <span class="card-icon mb-4 bg-orange"
+                ><i class="fa-solid fa-image-portrait"></i
+              ></span>
               <h3 class="mb-2">Search For Doctors</h3>
-              <p class="mb-0">Search for a doctor based on specialization, location, or availability for your Treatements</p>
+              <p class="mb-0">
+                Search for a doctor based on specialization, location, or
+                availability for your Treatements
+              </p>
               <span class="card-number">02</span>
-              <div class="card-img"><img src="./images/aboutUs/imgi_64_way-icon.svg" alt=""></div>
+              <div class="card-img">
+                <img src="assets/img/aboutUs/imgi_64_way-icon.svg" alt="" />
+              </div>
             </div>
           </div>
           <div class="col-3 about-us-card p-2 text-white">
-            <div class=" bg-transparent p-4 text-center position-relative">
-              <span class="card-icon mb-4 bg-cyan"><i class="fa-solid fa-calendar-days"></i></span>
+            <div class="bg-transparent p-4 text-center position-relative">
+              <span class="card-icon mb-4 bg-cyan"
+                ><i class="fa-solid fa-calendar-days"></i
+              ></span>
               <h3 class="mb-2">Search For Doctors</h3>
-              <p class="mb-0">Search for a doctor based on specialization, location, or availability for your Treatements</p>
+              <p class="mb-0">
+                Search for a doctor based on specialization, location, or
+                availability for your Treatements
+              </p>
               <span class="card-number">03</span>
-              <div class="card-img"><img src="./images/aboutUs/imgi_64_way-icon.svg" alt=""></div>
+              <div class="card-img">
+                <img src="assets/img/aboutUs/imgi_64_way-icon.svg" alt="" />
+              </div>
             </div>
           </div>
           <div class="col-3 about-us-card p-2 text-white">
-            <div class=" bg-transparent p-4 text-center">
-              <span class="card-icon mb-4 bg-purple"><i class="fa-solid fa-circle"></i></span>
+            <div class="bg-transparent p-4 text-center">
+              <span class="card-icon mb-4 bg-purple"
+                ><i class="fa-solid fa-circle"></i
+              ></span>
               <h3 class="mb-2">Search For Doctors</h3>
-              <p class="mb-0">Search for a doctor based on specialization, location, or availability for your Treatements</p>
+              <p class="mb-0">
+                Search for a doctor based on specialization, location, or
+                availability for your Treatements
+              </p>
               <span class="card-number">04</span>
             </div>
           </div>
-
-
-
         </div>
 
+        <img
+          src="assets/img/aboutUs/imgi_66_aboutus-bg-one.png"
+          alt=""
+          class="about-us-bg-img1"
+        />
+        <img
+          src="assets/img/aboutUs/imgi_65_aboutus-bg.png"
+          alt=""
+          class="about-us-bg-img2"
+        />
+      </section>
 
-       
-        <img src="./images/aboutUs/imgi_66_aboutus-bg-one.png" alt="" class="about-us-bg-img1">
-        <img src="./images/aboutUs/imgi_65_aboutus-bg.png" alt="" class="about-us-bg-img2">
+      <!-- Testimonials section -->
+      <section class="testimonials-section">
+        <div class="container">
+          <div class="test-header mb-5 text-center">
+            <h6
+              class="special-h6 py-1 px-4 m-auto rounded-pill primary-background-color text-white position-relative z-2"
+            >
+              Testimonials
+            </h6>
+            <h2 class="fw-bold fs-1 text-center mt-3">
+              15k Users <span class="text-blue">Trust Doccure </span>Worldwide
+            </h2>
+          </div>
 
-      </div>
-    </div>
-
-
-    <!-- Testimonials section -->
-    <div class="testimonials-section">
-        <div class="container ">
-            <div class="test-header mb-5">
-              <h6 class="special-h6 py-1 px-4 m-auto  rounded-pill primary-background-color text-white position-relative z-2">Testimonials</h5>
-              <h2 class="fw-bold fs-1 text-center mt-3">15k Users <span class="text-blue">Trust Doccure </span>Worldwide </h2>
+          <div class="reviews testimonial-cards">
+            <div
+              class="review px-3 pt-2 pb-3 mx-3 rounded-4"
+              style="width: 410px"
+            >
+              <div
+                class="d-flex align-items-center justify-content-between mb-3"
+              >
+                <ul class="d-flex align-items-center fs-5 m-0 p-0">
+                  <li><i class="fa-solid fa-star text-warning"></i></li>
+                  <li><i class="fa-solid fa-star text-warning"></i></li>
+                  <li><i class="fa-solid fa-star text-warning"></i></li>
+                  <li><i class="fa-solid fa-star text-warning"></i></li>
+                  <li><i class="fa-solid fa-star text-warning"></i></li>
+                </ul>
+                <span class="fs-2 text-blue"
+                  ><i class="fa-solid fa-quote-left"></i
+                ></span>
+              </div>
+              <div>
+                <h5 class="fw-bold">Excellecnt Service</h5>
+                <p class="text-darkgray mb-4">
+                  I had a wonderful experience the staff was friendly and
+                  attentive, and Dr. Smith took the time to explain everything
+                  clearly.
+                </p>
+              </div>
+              <div class="d-flex align-items-center">
+                <img
+                  src="assets/img/testimonials/imgi_69_patient23.jpg"
+                  alt=""
+                  class=""
+                />
+                <div class="ml-4">
+                  <a href="" class="text-dark"
+                    ><h5 class="fw-bold">Sofia Doe</h5></a
+                  >
+                  <p class="text-darkgray m-0">Los Boston, USA</p>
+                </div>
+              </div>
             </div>
-
-            <div class="reviews testimonial-cards">
-              <div class="review  px-3 pt-2 pb-3 mx-3 rounded-4 " style="width: 410px;">
-                  <div class="d-flex align-items-center justify-content-between mb-3" >
-                      <ul class="d-flex align-items-center fs-5 m-0 p-0">
-                        <li><i class="fa-solid fa-star text-warning"></i></li>
-                        <li><i class="fa-solid fa-star text-warning"></i></li>
-                        <li><i class="fa-solid fa-star text-warning"></i></li>
-                        <li><i class="fa-solid fa-star text-warning"></i></li>
-                        <li><i class="fa-solid fa-star text-warning"></i></li>
-                      </ul>
-                      <span class="fs-2 text-blue"><i class="fa-solid fa-quote-left"></i></span>
-                  </div>
-                  <div>
-                    <h5 class="fw-bold">Excellecnt Service</h5>
-                    <p class="text-darkgray mb-4">I had a wonderful experience the staff was friendly and attentive, and Dr. Smith took the time to explain everything clearly.</p>
-                  </div>
-                  <div class="d-flex align-items-center">
-                    <img src="./images/testimonials/imgi_69_patient23.jpg" alt="" class="">
-                    <div class="ml-4">
-                     <a href="" class="text-dark"><h5 class="fw-bold">Sofia Doe</h5></a> 
-                      <p class="text-darkgray m-0">Los Boston, USA</p>
-                    </div>
-                  </div>
+            <div
+              class="review card px-3 pt-2 pb-3 mx-3 rounded-4"
+              style="width: 410px"
+            >
+              <div
+                class="d-flex align-items-center justify-content-between mb-3"
+              >
+                <ul class="d-flex align-items-center fs-5 m-0 p-0">
+                  <li><i class="fa-solid fa-star text-warning"></i></li>
+                  <li><i class="fa-solid fa-star text-warning"></i></li>
+                  <li><i class="fa-solid fa-star text-warning"></i></li>
+                  <li><i class="fa-solid fa-star text-warning"></i></li>
+                  <li><i class="fa-solid fa-star text-warning"></i></li>
+                </ul>
+                <span class="fs-2 text-blue"
+                  ><i class="fa-solid fa-quote-left"></i
+                ></span>
               </div>
-              <div class="review card px-3 pt-2 pb-3 mx-3 rounded-4 " style="width: 410px;">
-                  <div class="d-flex align-items-center justify-content-between mb-3" >
-                      <ul class="d-flex align-items-center fs-5 m-0 p-0">
-                        <li><i class="fa-solid fa-star text-warning"></i></li>
-                        <li><i class="fa-solid fa-star text-warning"></i></li>
-                        <li><i class="fa-solid fa-star text-warning"></i></li>
-                        <li><i class="fa-solid fa-star text-warning"></i></li>
-                        <li><i class="fa-solid fa-star text-warning"></i></li>
-                      </ul>
-                      <span class="fs-2 text-blue"><i class="fa-solid fa-quote-left"></i></span>
-                  </div>
-                  <div>
-                    <h5 class="fw-bold">Good Hospitability</h5>
-                    <p class="text-darkgray mb-4">Genuinely cares about his patients. He helped me understand my condition and worked with me to create a plan.</p>
-                  </div>
-                  <div class="d-flex align-items-center">
-                    <img src="./images/testimonials/imgi_70_patient21.jpg" alt="" class="">
-                    <div class="ml-4">
-                     <a href="" class="text-dark"><h5 class="fw-bold">Johnson DWayne</h5></a> 
-                      <p class="text-darkgray m-0">San Fransisco, CA</p>
-                    </div>
-                  </div>
+              <div>
+                <h5 class="fw-bold">Good Hospitability</h5>
+                <p class="text-darkgray mb-4">
+                  Genuinely cares about his patients. He helped me understand my
+                  condition and worked with me to create a plan.
+                </p>
               </div>
-              <div class="review card px-3 pt-2 pb-3 mx-3 rounded-4 " style="width: 410px;">
-                  <div class="d-flex align-items-center justify-content-between mb-3" >
-                      <ul class="d-flex align-items-center fs-5 m-0 p-0">
-                        <li><i class="fa-solid fa-star text-warning"></i></li>
-                        <li><i class="fa-solid fa-star text-warning"></i></li>
-                        <li><i class="fa-solid fa-star text-warning"></i></li>
-                        <li><i class="fa-solid fa-star text-warning"></i></li>
-                        <li><i class="fa-solid fa-star text-warning"></i></li>
-                      </ul>
-                      <span class="fs-2 text-blue"><i class="fa-solid fa-quote-left"></i></span>
-                  </div>
-                  <div>
-                    <h5 class="fw-bold">Nice Treatement</h5>
-                    <p class="text-darkgray mb-4">I had a wonderful experience the staff was friendly and attentive, and Dr. Smith took the time to explain everything clearly.</p>
-                  </div>
-                  <div class="d-flex align-items-center">
-                    <img src="./images/testimonials/imgi_71_patient22.jpg" alt="" class="">
-                    <div class="ml-4">
-                     <a href="" class="text-dark"><h5 class="fw-bold">Deny Hendrawan</h5></a> 
-                      <p class="text-darkgray m-0">United States</p>
-                    </div>
-                  </div>
+              <div class="d-flex align-items-center">
+                <img
+                  src="assets/img/testimonials/imgi_70_patient21.jpg"
+                  alt=""
+                  class=""
+                />
+                <div class="ml-4">
+                  <a href="" class="text-dark"
+                    ><h5 class="fw-bold">Johnson DWayne</h5></a
+                  >
+                  <p class="text-darkgray m-0">San Fransisco, CA</p>
+                </div>
               </div>
-              <div class="review card px-3 pt-2 pb-3 mx-3 rounded-4 " style="width: 410px;">
-                  <div class="d-flex align-items-center justify-content-between mb-3" >
-                      <ul class="d-flex align-items-center fs-5 m-0 p-0">
-                        <li><i class="fa-solid fa-star text-warning"></i></li>
-                        <li><i class="fa-solid fa-star text-warning"></i></li>
-                        <li><i class="fa-solid fa-star text-warning"></i></li>
-                        <li><i class="fa-solid fa-star text-warning"></i></li>
-                        <li><i class="fa-solid fa-star text-warning"></i></li>
-                      </ul>
-                      <span class="fs-2 text-blue"><i class="fa-solid fa-quote-left"></i></span>
-                  </div>
-                  <div>
-                    <h5 class="fw-bold">Nice Support</h5>
-                    <p class="text-darkgray mb-4">My experience was excellent. The staff was polite and attentive, and the doctor took the time to explain every step clearly.</p>
-                  </div>
-                  <div class="d-flex align-items-center">
-                    <img src="./images/testimonials/imgi_68_patient2.jpg" alt="" class="">
-                    <div class="ml-4">
-                     <a href="" class="text-dark"><h5 class="fw-bold">Brooks Steave</h5></a> 
-                      <p class="text-darkgray m-0">Dallas, CA</p>
-                    </div>
-                  </div>
-              </div>
-              
             </div>
-            <div class="test-counters mt-5 d-flex align-items-center justify-content-around gap-5">
-                <div class="count count1 text-center">
-                 <span class="border-bottom border-4 ">
-                   <span class="counter ">500 </span><span>+</span>
-                 </span>
-                  <p class="text-darkgray mt-3">Doctors Available</p>
+            <div
+              class="review card px-3 pt-2 pb-3 mx-3 rounded-4"
+              style="width: 410px"
+            >
+              <div
+                class="d-flex align-items-center justify-content-between mb-3"
+              >
+                <ul class="d-flex align-items-center fs-5 m-0 p-0">
+                  <li><i class="fa-solid fa-star text-warning"></i></li>
+                  <li><i class="fa-solid fa-star text-warning"></i></li>
+                  <li><i class="fa-solid fa-star text-warning"></i></li>
+                  <li><i class="fa-solid fa-star text-warning"></i></li>
+                  <li><i class="fa-solid fa-star text-warning"></i></li>
+                </ul>
+                <span class="fs-2 text-blue"
+                  ><i class="fa-solid fa-quote-left"></i
+                ></span>
+              </div>
+              <div>
+                <h5 class="fw-bold">Nice Treatement</h5>
+                <p class="text-darkgray mb-4">
+                  I had a wonderful experience the staff was friendly and
+                  attentive, and Dr. Smith took the time to explain everything
+                  clearly.
+                </p>
+              </div>
+              <div class="d-flex align-items-center">
+                <img
+                  src="assets/img/testimonials/imgi_71_patient22.jpg"
+                  alt=""
+                  class=""
+                />
+                <div class="ml-4">
+                  <a href="" class="text-dark"
+                    ><h5 class="fw-bold">Deny Hendrawan</h5></a
+                  >
+                  <p class="text-darkgray m-0">United States</p>
                 </div>
-                <div class="count count2 text-center">
-                 <span class="border-bottom border-4 ">
-                   <span class="counter ">18</span><span>+</span>
-                 </span>
-                  <p class="text-darkgray mt-3">Specialities</p>
+              </div>
+            </div>
+            <div
+              class="review card px-3 pt-2 pb-3 mx-3 rounded-4"
+              style="width: 410px"
+            >
+              <div
+                class="d-flex align-items-center justify-content-between mb-3"
+              >
+                <ul class="d-flex align-items-center fs-5 m-0 p-0">
+                  <li><i class="fa-solid fa-star text-warning"></i></li>
+                  <li><i class="fa-solid fa-star text-warning"></i></li>
+                  <li><i class="fa-solid fa-star text-warning"></i></li>
+                  <li><i class="fa-solid fa-star text-warning"></i></li>
+                  <li><i class="fa-solid fa-star text-warning"></i></li>
+                </ul>
+                <span class="fs-2 text-blue"
+                  ><i class="fa-solid fa-quote-left"></i
+                ></span>
+              </div>
+              <div>
+                <h5 class="fw-bold">Nice Support</h5>
+                <p class="text-darkgray mb-4">
+                  My experience was excellent. The staff was polite and
+                  attentive, and the doctor took the time to explain every step
+                  clearly.
+                </p>
+              </div>
+              <div class="d-flex align-items-center">
+                <img
+                  src="assets/img/testimonials/imgi_68_patient2.jpg"
+                  alt=""
+                  class=""
+                />
+                <div class="ml-4">
+                  <a href="" class="text-dark"
+                    ><h5 class="fw-bold">Brooks Steave</h5></a
+                  >
+                  <p class="text-darkgray m-0">Dallas, CA</p>
                 </div>
-                <div class="count count3 text-center">
-                 <span class="border-bottom border-4 ">
-                   <span class="counter ">30</span><span>K</span>
-                 </span>
-                  <p class="text-darkgray mt-3">Booking Done</p>
-                </div>
-                <div class="count count4 text-center">
-                 <span class="border-bottom border-4 ">
-                   <span class="counter ">97 </span><span>+</span>
-                 </span>
-                  <p class="text-darkgray mt-3">Hospitals & Clinic</p>
-                </div>
-                <div class="count count5 text-center">
-                 <span class="border-bottom border-4 border-warning">
-                   <span class="counter ">317 </span><span>+</span>
-                 </span>
-                  <p class="text-darkgray mt-3">Lab Tests Available</p>
-                </div>
-
+              </div>
             </div>
           </div>
-        
-
-    </div>
-
-<!-- Partners Section -->
-    <div class="partners-section">
-      <div class="container">
-        <h6 class="text-center text-white mb-4">Trusted Partners with Doccure</h6 >
-        <div class="partner-cards">
-            <div class="partner-card">
-              <div>
-                <span class="bg-danger"><img src="./images/partners/imgi_72_company-02.svg" alt="" class=""></span>
-              </div>
+          <div
+            class="test-counters mt-5 d-flex align-items-center justify-content-around gap-5"
+          >
+            <div class="count count1 text-center">
+              <span class="border-bottom border-4">
+                <span class="counter">500 </span><span>+</span>
+              </span>
+              <p class="text-darkgray mt-3">Doctors Available</p>
             </div>
-            <div class="partner-card">
-              <div>
-                <span class="bg-danger"><img src="./images/partners/imgi_73_company-03.svg" alt="" class=""></span>
-              </div>
+            <div class="count count2 text-center">
+              <span class="border-bottom border-4">
+                <span class="counter">18</span><span>+</span>
+              </span>
+              <p class="text-darkgray mt-3">Specialities</p>
             </div>
-            <div class="partner-card">
-              <div>
-                <span class="bg-danger"><img src="./images/partners/imgi_74_company-04.svg" alt="" class=""></span>
-              </div>
+            <div class="count count3 text-center">
+              <span class="border-bottom border-4">
+                <span class="counter">30</span><span>K</span>
+              </span>
+              <p class="text-darkgray mt-3">Booking Done</p>
             </div>
-            <div class="partner-card">
-              <div>
-                <span class="bg-danger"><img src="./images/partners/imgi_75_company-05.svg" alt="" class=""></span>
-              </div>
+            <div class="count count4 text-center">
+              <span class="border-bottom border-4">
+                <span class="counter">97 </span><span>+</span>
+              </span>
+              <p class="text-darkgray mt-3">Hospitals & Clinic</p>
             </div>
-            <div class="partner-card">
-              <div>
-                <span class="bg-danger"><img src="./images/partners/imgi_76_company-06.svg" alt="" class=""></span>
-              </div>
+            <div class="count count5 text-center">
+              <span class="border-bottom border-4 border-warning">
+                <span class="counter">317 </span><span>+</span>
+              </span>
+              <p class="text-darkgray mt-3">Lab Tests Available</p>
             </div>
-            <div class="partner-card">
-              <div>
-                <span class="bg-danger"><img src="./images/partners/imgi_77_company-07.svg" alt="" class=""></span>
-              </div>
-            </div>
-            <div class="partner-card">
-              <div>
-                <span class="bg-danger"><img src="./images/partners/imgi_78_company-01.svg" alt="" class=""></span>
-              </div>
-            </div>
+          </div>
         </div>
-      </div>
-    </div>
+      </section>
 
-
-    <!-- FAQ Section -->
-    <div class="questions-section">
-      <div class="container">
-            <div class="test-header mb-5">
-              <h6 class="special-h6 py-1 px-4 m-auto  rounded-pill primary-background-color text-white position-relative z-2">FAQ'S</h5>
-              <h2 class="fw-bold fs-1 text-center mt-3">Your Questions are <span class="text-blue">Answered </span> </h2>
+      <!-- Partners Section -->
+      <section class="partners-section">
+        <div class="container">
+          <h6 class="text-center text-white mb-4">
+            Trusted Partners with Doccure
+          </h6>
+          <div class="partner-cards">
+            <div class="partner-card">
+              <div>
+                <span class="bg-danger"
+                  ><img
+                    src="assets/img/partners/imgi_78_company-01.svg"
+                    alt=""
+                    class=""
+                /></span>
+              </div>
             </div>
-
-            <div class="accordion accordion-flush" id="accordionFlushExample" style="width: 80%; margin: auto ;">
-              <div class="accordion-item border border-gray border-2 rounded-4 mb-3 bg-white ">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed text-dark " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-												How do I book an appointment with a doctor?
-                  </button>
-                </h2>
-                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body text-darkgray pb-3">Yes, simply visit our website and log in or create an account. Search for a doctor based on specialization, location, or availability & confirm your booking.</div>
-                </div>
+            <div class="partner-card">
+              <div>
+                <span class="bg-danger"
+                  ><img
+                    src="assets/img/partners/imgi_72_company-02.svg"
+                    alt=""
+                    class=""
+                /></span>
               </div>
-              <div class="accordion-item border border-gray border-2 rounded-4 mb-3 bg-white ">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed text-dark " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">												
-												Can I request a specific doctor when booking my appointment? 											
-                  </button>
-                </h2>
-                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body text-darkgray pb-3">Yes, you can usually request a specific doctor when booking your appointment, though availability may vary based on their schedule.</div>
-                </div>
-              </div>
-              <div class="accordion-item border border-gray border-2 rounded-4 mb-3 bg-white ">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed text-dark " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">												
-												
-												What should I do if I need to cancel or reschedule my appointment?
-											 											
-                  </button>
-                </h2>
-                <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body text-darkgray pb-3">If you need to cancel or reschedule your appointment, contact the doctor as soon as possible to inform them and to reschedule for another available time slot.</div>
-                </div>
-              </div>
-              <div class="accordion-item border border-gray border-2 rounded-4 mb-3 bg-white ">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed text-dark " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">												
-
-												What if I'm running late for my appointment?
-											 											
-                  </button>
-                </h2>
-                <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body text-darkgray pb-3">If you know you will be late, it's courteous to call the doctor's office and inform them. Depending on their policy and schedule, they may be able to accommodate you or reschedule your appointment.</div>
-                </div>
-              </div>
-              <div class="accordion-item border border-gray border-2 rounded-4 mb-3 bg-white ">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed text-dark " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">												
-
-												Can I book appointments for family members or dependents?
-																			
-                  </button>
-                </h2>
-                <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body text-darkgray pb-3">Yes, in many cases, you can book appointments for family members or dependents. However, you may need to provide their personal information and consent to do so.</div>
-                </div>
-              </div>
-
             </div>
-      </div>
-    </div>
+            <div class="partner-card">
+              <div>
+                <span class="bg-danger"
+                  ><img
+                    src="assets/img/partners/imgi_73_company-03.svg"
+                    alt=""
+                    class=""
+                /></span>
+              </div>
+            </div>
+            <div class="partner-card">
+              <div>
+                <span class="bg-danger"
+                  ><img
+                    src="assets/img/partners/imgi_74_company-04.svg"
+                    alt=""
+                    class=""
+                /></span>
+              </div>
+            </div>
+            <div class="partner-card">
+              <div>
+                <span class="bg-danger"
+                  ><img
+                    src="assets/img/partners/imgi_75_company-05.svg"
+                    alt=""
+                    class=""
+                /></span>
+              </div>
+            </div>
+            <div class="partner-card">
+              <div>
+                <span class="bg-danger"
+                  ><img
+                    src="assets/img/partners/imgi_76_company-06.svg"
+                    alt=""
+                    class=""
+                /></span>
+              </div>
+            </div>
+            <div class="partner-card">
+              <div>
+                <span class="bg-danger"
+                  ><img
+                    src="assets/img/partners/imgi_77_company-07.svg"
+                    alt=""
+                    class=""
+                /></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
+      <!-- FAQ Section -->
+      <section class="questions-section">
+        <div class="container">
+          <div class="test-header mb-5 text-center">
+            <h6
+              class="special-h6 py-1 px-4 m-auto rounded-pill primary-background-color text-white position-relative z-2"
+            >
+              FAQ'S
+            </h6>
+            <h2 class="fw-bold fs-1 text-center mt-3">
+              Your Questions are <span class="text-blue">Answered </span>
+            </h2>
+          </div>
 
+          <div
+            class="accordion accordion-flush"
+            id="accordionFlushExample"
+            style="width: 80%; margin: auto"
+          >
+            <div
+              class="accordion-item border border-gray border-2 rounded-4 mb-3 bg-white"
+            >
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed text-dark"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseOne"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseOne"
+                >
+                  How do I book an appointment with a doctor?
+                </button>
+              </h2>
+              <div
+                id="flush-collapseOne"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body text-darkgray pb-3">
+                  Yes, simply visit our website and log in or create an account.
+                  Search for a doctor based on specialization, location, or
+                  availability & confirm your booking.
+                </div>
+              </div>
+            </div>
+            <div
+              class="accordion-item border border-gray border-2 rounded-4 mb-3 bg-white"
+            >
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed text-dark"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseTwo"
+                >
+                  Can I request a specific doctor when booking my appointment?
+                </button>
+              </h2>
+              <div
+                id="flush-collapseTwo"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body text-darkgray pb-3">
+                  Yes, you can usually request a specific doctor when booking
+                  your appointment, though availability may vary based on their
+                  schedule.
+                </div>
+              </div>
+            </div>
+            <div
+              class="accordion-item border border-gray border-2 rounded-4 mb-3 bg-white"
+            >
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed text-dark"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseThree"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseThree"
+                >
+                  What should I do if I need to cancel or reschedule my
+                  appointment?
+                </button>
+              </h2>
+              <div
+                id="flush-collapseThree"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body text-darkgray pb-3">
+                  If you need to cancel or reschedule your appointment, contact
+                  the doctor as soon as possible to inform them and to
+                  reschedule for another available time slot.
+                </div>
+              </div>
+            </div>
+            <div
+              class="accordion-item border border-gray border-2 rounded-4 mb-3 bg-white"
+            >
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed text-dark"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseFour"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseFour"
+                >
+                  What if I'm running late for my appointment?
+                </button>
+              </h2>
+              <div
+                id="flush-collapseFour"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body text-darkgray pb-3">
+                  If you know you will be late, it's courteous to call the
+                  doctor's office and inform them. Depending on their policy and
+                  schedule, they may be able to accommodate you or reschedule
+                  your appointment.
+                </div>
+              </div>
+            </div>
+            <div
+              class="accordion-item border border-gray border-2 rounded-4 mb-3 bg-white"
+            >
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed text-dark"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseFive"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseFive"
+                >
+                  Can I book appointments for family members or dependents?
+                </button>
+              </h2>
+              <div
+                id="flush-collapseFive"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body text-darkgray pb-3">
+                  Yes, in many cases, you can book appointments for family
+                  members or dependents. However, you may need to provide their
+                  personal information and consent to do so.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    <div class="container app-section-container">
-      <div class="app-section position-relative">
-        <div class="row row-cols-12 ">
-            <div class=" col-6 app-content text-white">
+      <section class="container app-section-container mb-5">
+        <div class="app-section position-relative">
+          <div class="row row-cols-12">
+            <div class="col-6 app-content text-white">
               <p class="">Working for Your Better Health.</p>
-              <h2 class="fw-bold fs-1  mt-3 "> Download the Doccure App today! </h2>
+              <h2 class="fw-bold fs-1 mt-3">Download the Doccure App today!</h2>
               <div class="mt-5">
-                 <a href="" ><img src="./images/appSection/imgi_81_app-store.svg" alt=""></a> 
-                 <a href="" class="pl-4"><img  src="./images/appSection/imgi_82_google-play.svg"  alt=""></a> 
+                <a href="#" aria-label="App Store"
+                  ><img
+                    src="assets/img/appSection/imgi_81_app-store.svg"
+                    alt="App Store"
+                /></a>
+                <a href="#" class="pl-4" aria-label="Google Play"
+                  ><img
+                    src="assets/img/appSection/imgi_82_google-play.svg"
+                    alt="Google Play"
+                /></a>
               </div>
-
             </div>
             <div class="col-6 z-2">
-              <img src="./images/appSection/imgi_83_mobile-img.png" class="w-100" alt="">
+              <img
+                src="assets/img/appSection/imgi_83_mobile-img.png"
+                class="w-100"
+                alt="Mobile App"
+              />
             </div>
           </div>
-          <div class="app-img1"><img src="./images/appSection/imgi_86_app-bg-04.png" class=" " alt=""></div>
-          <div class="app-img2"><img src="./images/appSection/imgi_84_app-bg-02.png" class=" " alt=""></div>
-          <div class="app-img3"><img src="./images/appSection/imgi_85_app-bg-03.png" class=" " alt=""></div>
+          <div class="app-img1">
+            <img
+              src="assets/img/appSection/imgi_86_app-bg-04.png"
+              class=" "
+              alt="App Background 1"
+            />
+          </div>
+          <div class="app-img2">
+            <img
+              src="assets/img/appSection/imgi_84_app-bg-02.png"
+              class=" "
+              alt="App Background 2"
+            />
+          </div>
+          <div class="app-img3">
+            <img
+              src="assets/img/appSection/imgi_85_app-bg-03.png"
+              class=" "
+              alt="App Background 3"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- Blog Section -->
+      <section class="blog-section">
+        <div class="container">
+          <div class="text-center mb-5">
+            <span
+              class="special-h6 py-1 px-4 m-auto rounded-pill primary-background-color text-white position-relative z-2"
+              >Recent Blogs</span
+            >
+            <h2 class="fw-bold fs-1">
+              Stay Updated With Our
+              <span class="text-primary">Latest Articles</span>
+            </h2>
+          </div>
+
+          <div class="row g-4 justify-content-center">
+            <!-- Blog 1 -->
+            <div class="col-lg-5">
+              <div class="blog-card d-md-flex gap-4">
+                <div
+                  class="blog-img-wrap flex-shrink-0"
+                  style="width: 200px; height: 180px"
+                >
+                  <img
+                    src="assets/img/recentsection/article-01.webp"
+                    class="w-100 h-100 object-fit-cover"
+                    alt="Glaucoma Article"
+                  />
+                  <div class="blog-date-badge">
+                    <span class="day">15</span>
+                    <span class="month">May</span>
+                  </div>
+                </div>
+                <div
+                  class="blog-content mt-3 mt-md-0 d-flex flex-column justify-content-center"
+                >
+                  <span class="category-tag">Treatments</span>
+                  <h4>
+                    Understanding and Preventing Glaucoma: A Detailed Guide
+                  </h4>
+                  <p>
+                    Glaucoma is a leading cause of blind worldwide, yet many....
+                  </p>
+                  <a href="#" class="read-more-link"
+                    >Read More <i class="fa-solid fa-arrow-right small ms-1"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Blog 2 -->
+            <div class="col-lg-5">
+              <div class="blog-card d-md-flex gap-4">
+                <div
+                  class="blog-img-wrap flex-shrink-0"
+                  style="width: 200px; height: 180px"
+                >
+                  <img
+                    src="assets/img/recentsection/article-02.jpg"
+                    class="w-100 h-100 object-fit-cover"
+                    alt="Neurology Article"
+                  />
+                  <div class="blog-date-badge">
+                    <span class="day">18</span>
+                    <span class="month">May</span>
+                  </div>
+                </div>
+                <div
+                  class="blog-content mt-3 mt-md-0 d-flex flex-column justify-content-center"
+                >
+                  <span class="category-tag">Neurology</span>
+                  <h4>
+                    Understanding and Preventing Glaucoma: A Detailed Guide
+                  </h4>
+                  <p>
+                    Discover the intersection of technology and neurology,
+                    transforming....
+                  </p>
+                  <a href="#" class="read-more-link"
+                    >Read More <i class="fa-solid fa-arrow-right small ms-1"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-center mt-5">
+            <button class="view-all-btn px-4 py-2">
+              View All Articles <i class="fa-solid fa-angle-right ms-2"></i>
+            </button>
+          </div>
+
+          <!-- CTA Banner -->
+          <div class="cta-banner mt-5 shadow-lg">
+            <div
+              class="d-flex justify-content-between align-items-center position-relative z-1"
+            >
+              <h2>Working for Your Better Health.</h2>
+
+              <div class="d-flex gap-4 cta-info-wrap">
+                <!-- Customer Support -->
+                <div class="cta-info-item">
+                  <div class="cta-icon-box shadow-sm">
+                    <i class="fa-solid fa-headset"></i>
+                  </div>
+                  <div class="cta-text-box">
+                    <small>Customer Support</small>
+                    <span>+1 56589 54598</span>
+                  </div>
+                </div>
+
+                <!-- Email -->
+                <div class="cta-info-item">
+                  <div class="cta-icon-box shadow-sm">
+                    <i class="fa-solid fa-envelope"></i>
+                  </div>
+                  <div class="cta-text-box">
+                    <small>Drop Us an Email</small>
+                    <span>info1256@example.com</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer-bg pt-5">
+        <div class="container">
+          <!-- Top Grid -->
+          <div class="row g-4 pb-5">
+            <!-- Company -->
+            <div class="col-6 col-md-4 col-lg">
+              <h6 class="fw-bold mb-3">Company</h6>
+              <ul class="list-unstyled small">
+                <li class="mb-2">
+                  <a href="#" class="text-decoration-none text-dark">About</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="text-decoration-none text-dark"
+                    >Features</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="text-decoration-none text-dark">Works</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="text-decoration-none text-dark">Careers</a>
+                </li>
+                <li>
+                  <a href="#" class="text-decoration-none text-dark"
+                    >Locations</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- Treatments -->
+            <div class="col-6 col-md-4 col-lg">
+              <h6 class="fw-bold mb-3">Treatments</h6>
+              <ul class="list-unstyled small">
+                <li class="mb-2">Dental</li>
+                <li class="mb-2">Cardiac</li>
+                <li class="mb-2">Spinal Cord</li>
+                <li class="mb-2">Hair Growth</li>
+                <li>Anemia & Disorder</li>
+              </ul>
+            </div>
+
+            <!-- Specialities -->
+            <div class="col-6 col-md-4 col-lg">
+              <h6 class="fw-bold mb-3">Specialities</h6>
+              <ul class="list-unstyled small">
+                <li class="mb-2">Transplant</li>
+                <li class="mb-2">Cardiologist</li>
+                <li class="mb-2">Oncology</li>
+                <li class="mb-2">Pediatrics</li>
+                <li>Gynacology</li>
+              </ul>
+            </div>
+
+            <!-- Utilities -->
+            <div class="col-6 col-md-4 col-lg">
+              <h6 class="fw-bold mb-3">Utilities</h6>
+              <ul class="list-unstyled small">
+                <li class="mb-2">Pricing</li>
+                <li class="mb-2">Contact</li>
+                <li class="mb-2">Request A Quote</li>
+                <li class="mb-2">Premium Membership</li>
+                <li>Integrations</li>
+              </ul>
+            </div>
+
+            <!-- Newsletter -->
+            <div class="col-md-8 col-lg-4">
+              <h6 class="fw-bold mb-3">Newsletter</h6>
+              <p class="small text-muted">
+                Subscribe & Stay Updated from the Doccure
+              </p>
+
+              <!-- Input group -->
+              <div class="input-group mb-4 shadow-sm rounded-5 bg-white">
+                <input
+                  type="email"
+                  class="form-control rounded-5 border-0 px-4 py-3"
+                  placeholder="Enter Email Address"
+                />
+
+                <button class="btn btn-primary rounded-5 p-2 m-2">
+                  <i class="fa-solid fa-location-arrow"></i> Send
+                </button>
+              </div>
+
+              <h6 class="fw-bold mb-3">Connect With Us</h6>
+
+              <!-- Social -->
+              <div class="d-flex gap-2">
+                <a
+                  href="#"
+                  class="btn text-dark btn-circle d-inline-flex justify-content-center align-items-center p-0 rounded-circle"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a
+                  href="#"
+                  class="btn text-dark btn-circle d-inline-flex justify-content-center align-items-center p-0 rounded-circle"
+                  ><i class="fab fa-x-twitter"></i
+                ></a>
+                <a
+                  href="#"
+                  class="btn text-dark btn-circle d-inline-flex justify-content-center align-items-center p-0 rounded-circle"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a
+                  href="#"
+                  class="btn text-dark btn-circle d-inline-flex justify-content-center align-items-center p-0 rounded-circle"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+                <a
+                  href="#"
+                  class="btn text-dark btn-circle d-inline-flex justify-content-center align-items-center p-0 rounded-circle"
+                  ><i class="fab fa-pinterest"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="border-top py-3 footer-bottom">
+          <div
+            class="container d-flex flex-column flex-md-row justify-content-between align-items-center small"
+          >
+            <!-- Copyright -->
+            <p class="mb-2 mb-md-0 text-muted">
+              Copyright © 2025 Doccure. All Rights Reserved
+            </p>
+
+            <!-- Policies -->
+            <ul class="list-inline mb-2 mb-md-0">
+              <li class="list-inline-item">
+                <a href="#" class="text-muted text-decoration-none"
+                  >Legal Notice</a
+                >
+              </li>
+              <li class="list-inline-item text-primary rounded-circle">•</li>
+              <li class="list-inline-item">
+                <a href="#" class="text-muted text-decoration-none"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li class="list-inline-item text-primary rounded-circle">•</li>
+              <li class="list-inline-item">
+                <a href="#" class="text-muted text-decoration-none"
+                  >Refund Policy</a
+                >
+              </li>
+            </ul>
+
+            <!-- Payment Icons -->
+            <div class="d-flex gap-2">
+              <img src="assets/img/icons/card-01.svg" height="22" />
+              <img src="assets/img/icons/card-02.svg" height="22" />
+              <img src="assets/img/icons/card-03.svg" height="22" />
+              <img src="assets/img/icons/card-04.svg" height="22" />
+              <img src="assets/img/icons/card-05.svg" height="22" />
+              <img src="assets/img/icons/card-06.svg" height="22" />
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <!-- Video Modal -->
+    <div
+      class="modal fade"
+      id="videoModal"
+      tabindex="-1"
+      aria-labelledby="videoModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content bg-transparent border-0">
+          <div class="modal-header border-0 p-0 mb-2">
+            <button
+              type="button"
+              class="btn-close btn-close-white ms-auto"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body p-0">
+            <div class="ratio ratio-16x9">
+              <iframe
+                id="aboutVideo"
+                src="https://www.youtube.com/embed/MyQxnFgPgQU?enablejsapi=1"
+                title="YouTube video player"
+                frameborder="0"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                  web-share;
+                "
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
     <script>
-  $(document).ready(function () {
-    $('.slick-slider').slick({
-      variableWidth: true,
-      slidesToShow: 6,
-      slidesToScroll: 1,
-      speed:2000,
-      autoplay: true,
-      arrows: true,
-      dots: false,
-      infinite: true,
-        prevArrow: `
-    <button type="button" class="slick-prev custom-arrow">
-      <<i class="fa-solid fa-arrow-left-long"></i>
+      $(document).ready(function () {
+        $(".slick-slider").slick({
+          variableWidth: true,
+          slidesToShow: 6,
+          slidesToScroll: 1,
+          speed: 2000,
+          autoplay: true,
+          arrows: true,
+          dots: false,
+          infinite: true,
+          prevArrow: `
+    <button type="button" class="slick-prev custom-arrow" aria-label="Previous">
+      <i class="fa-solid fa-arrow-left-long"></i>
     </button>
   `,
-  nextArrow: `
-    <button type="button" class="slick-next custom-arrow">
+          nextArrow: `
+    <button type="button" class="slick-next custom-arrow" aria-label="Next">
       <i class="fa-solid fa-arrow-right"></i>
     </button>
   `,
-      responsive: [
-        {
-          breakpoint: 992,
-          settings: {
-            slidesToShow: 2
-          }
-        },
-        {
-          breakpoint: 576,
-          settings: {
-            slidesToShow: 1
-          }
-        }
-      ]
-    });
-  });
-  $(document).ready(function(){
-  $('.doctors-cards').slick({
-    slidesToShow: 4,           
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2500,
-    speed:2000,
-    arrows: true,             
-    dots: false,              
-    prevArrow: '<button class="slick-prev custom-prev"><i class="fa-solid fa-angle-left"></i></button>',
-    nextArrow: '<button class="slick-next custom-next"><i class="fa-solid fa-angle-right"></i></button>',
-    responsive: [
-      {
-        breakpoint: 992,
-        settings: { slidesToShow: 2 }
-      },
-      {
-        breakpoint: 576,
-        settings: { slidesToShow: 1 }
-      }
-    ]
-  });
-});
-  $(document).ready(function(){
-  $('.partner-cards').slick({
-    slidesToShow: 6,           
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2500,
-    speed:2000,
-    arrows: true,             
-    dots: false,              
-    prevArrow: '<button class="slick-prev custom-prev"><i class="fa-solid fa-angle-left"></i></button>',
-    nextArrow: '<button class="slick-next custom-next"><i class="fa-solid fa-angle-right"></i></button>',
-    responsive: [
-      {
-        breakpoint: 992,
-        settings: { slidesToShow: 2 }
-      },
-      {
-        breakpoint: 576,
-        settings: { slidesToShow: 1 }
-      }
-    ]
-  });
-});
- $(document).ready(function(){
-  $('.testimonial-cards').slick({
-    slidesToShow: 4,           
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2500,
-    variableWidth: true,
-    speed:2000,
-    arrows: true,             
-    dots: false,              
-    prevArrow: '<button class="slick-prev custom-prev"><i class="fa-solid fa-angle-left"></i></button>',
-    nextArrow: '<button class="slick-next custom-next"><i class="fa-solid fa-angle-right"></i></button>',
-    responsive: [
-      {
-        breakpoint: 992,
-        settings: { slidesToShow: 2 }
-      },
-      {
-        breakpoint: 576,
-        settings: { slidesToShow: 1 }
-      }
-    ]
-  });
-});
-$(document).ready(function () {
-  $('.counter').counterUp({
-    delay: 10,
-    time: 2000
-  });
-});
+          responsive: [
+            {
+              breakpoint: 992,
+              settings: {
+                slidesToShow: 2,
+              },
+            },
+            {
+              breakpoint: 576,
+              settings: {
+                slidesToShow: 1,
+              },
+            },
+          ],
+        });
+      });
+      $(document).ready(function () {
+        $(".doctors-cards").slick({
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 2500,
+          speed: 2000,
+          arrows: true,
+          dots: false,
+          prevArrow:
+            '<button class="slick-prev custom-prev"><i class="fa-solid fa-angle-left"></i></button>',
+          nextArrow:
+            '<button class="slick-next custom-next"><i class="fa-solid fa-angle-right"></i></button>',
+          responsive: [
+            {
+              breakpoint: 992,
+              settings: { slidesToShow: 2 },
+            },
+            {
+              breakpoint: 576,
+              settings: { slidesToShow: 1 },
+            },
+          ],
+        });
+      });
+      $(document).ready(function () {
+        $(".partner-cards").slick({
+          slidesToShow: 6,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 2500,
+          speed: 2000,
+          arrows: true,
+          dots: false,
+          prevArrow:
+            '<button class="slick-prev custom-prev"><i class="fa-solid fa-angle-left"></i></button>',
+          nextArrow:
+            '<button class="slick-next custom-next"><i class="fa-solid fa-angle-right"></i></button>',
+          responsive: [
+            {
+              breakpoint: 992,
+              settings: { slidesToShow: 2 },
+            },
+            {
+              breakpoint: 576,
+              settings: { slidesToShow: 1 },
+            },
+          ],
+        });
+      });
+      $(document).ready(function () {
+        $(".testimonial-cards").slick({
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 2500,
+          variableWidth: true,
+          speed: 2000,
+          arrows: true,
+          dots: false,
+          prevArrow:
+            '<button class="slick-prev custom-prev"><i class="fa-solid fa-angle-left"></i></button>',
+          nextArrow:
+            '<button class="slick-next custom-next"><i class="fa-solid fa-angle-right"></i></button>',
+          responsive: [
+            {
+              breakpoint: 992,
+              settings: { slidesToShow: 2 },
+            },
+            {
+              breakpoint: 576,
+              settings: { slidesToShow: 1 },
+            },
+          ],
+        });
+      });
+      $(document).ready(function () {
+        $(".counter").counterUp({
+          delay: 10,
+          time: 2000,
+        });
+      });
 
-</script>
+      // Video Modal Control
+      $(document).ready(function () {
+        var videoSrc = $("#aboutVideo").attr("src");
 
+        // When modal is hidden, reset the src to stop the video
+        $("#videoModal").on("hidden.bs.modal", function () {
+          $("#aboutVideo").attr("src", "");
+          $("#aboutVideo").attr("src", videoSrc);
+        });
+      });
+    </script>
   </body>
 </html>
