@@ -732,7 +732,7 @@ footer a:hover {
 .services .service p {
   transition: 0.5s;
 }
-.services .service:hover i {
+.services .service:hover img {
   transform: rotateY(360deg);
   transition: 0.5s;
 }
